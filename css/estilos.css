@@ -1,0 +1,286 @@
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #1B264F;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: rgb(235, 235, 235);
+    border: #21897E solid 1px;
+    border-radius: 25px;
+    color: #21897E;
+    padding: 10px;
+    margin: 16px;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(235, 235, 235);
+    padding: 0 16px;
+}
+
+.header__nav {
+    display: grid;
+    grid-template-columns: 10vw auto;
+    grid-template-areas: "logo secciones";
+}
+
+.header__logo {
+    grid-area: logo;
+    width: 80px;
+    margin: 0 30px;
+}
+
+.header__menu {
+    grid-area: secciones;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__secciones a {
+    text-decoration: none;
+    color: #21897E;
+    font-size: 20px;
+}
+
+
+/* BANNERS */
+.banner__principal {
+    height: 400px;
+    width: 600px;
+}
+
+.banner__titulo {
+
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px white;
+}
+
+/* INDEX */
+
+.torneosPortada {
+    margin: 16px;
+}
+
+.torneosPortada__img {
+    width: 350px;
+}
+
+.redesPortada {
+    background-color: #21897E;
+}
+
+.redesPortada__texto {
+    display: inline;
+    color: white;
+    padding: 16px;
+}
+
+.redesPortada__img {
+    display: inline;
+    width: 70px;
+    margin: 0 10px;
+}
+
+.actividadesPortada {
+    margin: 16px;
+}
+
+.actividadesPortada__img {
+    width: 350px;
+}
+
+.actividadesPortada__boton {
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+}
+
+/* NOSOTROS */
+
+.nosotros__titulo {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.nosotros__texto {
+    text-align: center;
+    padding: 0 150px;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+.galeria {
+    margin: 20px;
+}
+
+.galeria__img {
+    width: 300px;
+}
+
+.ubicacion__titulo {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.ubicacion__mapa {
+    margin: 0 16px;
+}
+
+.ubicacion__texto {
+    text-align: center;
+    padding: 0 150px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+/* ACTIIDADES */
+
+.actividades__titulo {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.actividades__texto {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 100px;
+    line-height: 35px;
+}
+
+.actividades__banner {
+    width: 400px;
+    padding: 16px;
+}
+
+/* TORNEOS */
+
+.torneos__img {
+    width: 400px;
+    padding: 20px;
+}
+
+.torneos__titulo {
+    margin: 0 16px;
+    text-align: center;
+}
+
+.torneos__lista {
+    margin: 20px;
+    list-style: none;
+}
+
+.torneos__datos {
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.torneos__boton {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 16px;
+}
+
+/* CONTACTO */
+
+.contacto__grid {
+    display: grid;
+    grid-template-columns: 40vw auto;
+    grid-template-areas: "form banner";
+    align-items: center;
+}
+
+.contacto__formulario {
+    grid-area: form;
+    justify-self: center;
+}
+
+.banner__contacto {
+    grid-area: banner;
+    height: 90vh;
+    background-image: url("../recursos/contactos_banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.formulario__dato {
+    padding: 6px;
+}
+
+.formulario__dato--titulo {
+    display: block;
+    padding: 6px;
+}
+
+.formulario__dato--recuadro {
+    width: 450px;
+    height: 30px;
+}
+
+.formulario__dato--mensaje {
+    width: 450px;
+    height: 80px;
+}
+
+.formulario__boton {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(235, 235, 235);
+    border: #21897E solid 1px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #21897E;
+    padding: 10px;
+    margin: 16px;
+}
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-areas: "derechos redes";
+    background-color: rgb(235, 235, 235);
+    padding: 0 24px;
+}
+
+.footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    align-items: center;
+}
+
+.footer__redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__icono {
+    width: 25px;
+    margin: 5px;
+}
