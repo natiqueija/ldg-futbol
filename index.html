@@ -7,7 +7,7 @@
     <!-- LETRAS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon">
     <!-- CSS -->
@@ -29,69 +29,71 @@
 
     <main>
         <!-- Banner principal -->
-        <section class="banner">
-            <img class="banner__principal" src="recursos/cancha_de_futbol.jpg" alt="foto de cancha de futbol">
+        <section class="banner banner__home">
             <h1 class="banner__titulo">LDG Fútbol</h1>
         </section>
 
         <!-- Torneos -->
-        <section>
-            <article class="torneosPortada">
-                <h2 class="torneosPortada__titulo">Torneo Fútbol Masculino</h2>
-                <img class="torneosPortada__img" src="recursos/portada-futbol-masculino.jpg" alt="foto torneo futbol masculino">
+        <section class="home__torneos">
+            <article class="home__torneos--tarjeta futbol__masculino">
+                <h2 class="home__torneos--titulo">Torneo Fútbol Masculino</h2>
             </article>
-            <article class="torneosPortada">
-                <h2 class="torneosPortada__titulo">Torneo Fútbol Femenino</h2>
-                <img class="torneosPortada__img" src="recursos/portada-torneo-femenino.jpg" alt="foto torneo futbol femenino">
+            <article class="home__torneos--tarjeta futbol__femenino">
+                <h2 class="home__torneos--titulo">Torneo Fútbol Femenino</h2>
             </article>
-            <article class="torneosPortada">
-                <h2 class="torneosPortada__titulo">Torneo Fútbol Mixto</h2>
-                <img class="torneosPortada__img" src="recursos/portada-futbol-mixto.jpg" alt="foto torneo futbol mixto">
+            <article class="home__torneos--tarjeta futbol__mixto">
+                <h2 class="home__torneos--titulo">Torneo Fútbol Mixto</h2>
             </article>
         </section>
 
         <!-- Redes sociales -->
-        <section class="redesPortada">
-            <article >
-                <h2 class="redesPortada__texto">Formá parte de nuestra comunidad y enterate de todas las novedades</h2>
+        <section class="home__redes">
+            <article class="home__redes--titulo">
+                <h2 class="home__redes--texto">Formá parte de nuestra comunidad y enterate de todas las novedades</h2>
             </article>
-            <article>
+            <article class="home__redes--logos">
                 <!-- URL ejemplo - modificar -->
-                <a href="https://www.facebook.com/"><img class="redesPortada__img" src="recursos/facebook-square-brands.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/"><img class="redesPortada__img" src="recursos/instagram-square-brands.svg" alt="Intagram"></a>
-                <a href="https://twitter.com/"><img class="redesPortada__img" src="recursos/twitter-square-brands.svg" alt="Twitter"></a>
-                <a href="https://www.youtube.com/"><img class="redesPortada__img" src="recursos/youtube-square-brands.svg" alt="Youtube"></a>
+                <a href="https://www.facebook.com/"><img class="home__redes--img" src="recursos/facebook-square-brands.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img class="home__redes--img" src="recursos/instagram-square-brands.svg" alt="Intagram"></a>
+                <a href="https://twitter.com/"><img class="home__redes--img" src="recursos/twitter-square-brands.svg" alt="Twitter"></a>
+                <a href="https://www.youtube.com/"><img class="home__redes--img" src="recursos/youtube-square-brands.svg" alt="Youtube"></a>
             </article>    
         </section>
 
         <!-- Actividades -->
-        <section>
-            <article class="actividadesPortada"> <!-- Alquiler de Canchas -->
-                <h2 class="actividadesPortada__titulo">Alquiler de canchas</h2>
-                <img class="actividadesPortada__img" src="recursos/alquiler-canchas.jpg" alt="foto cancha de futbol">
-                <p class="actividadesPortada__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat odit rem dolore in maiores vero provident mollitia perspiciatis</p>
-                <button class="actividadesPortada__boton">Reserva tu cancha</button>
-                <button class="actividadesPortada__boton">+ Info</button>
+        <section class="home__actividades">
+            <article class="home__actividades--tarjeta home__alquiler"> <!-- Alquiler de Canchas -->
+                <h2 class="home__actividades--titulo">Alquiler de canchas</h2>
+                <img class="home__actividades--img" src="recursos/alquiler-canchas.jpg" alt="foto cancha de futbol">
+                <div class="home__actividades--texto">
+                    <p>Todas nuestras canchas están realizadas con el mejor césped sintetico de alta tecnología</p>
+                    <p>¡No te quedes sin cancha!</p>
+                </div>
+                <button class="home__actividades--boton">Reserva tu cancha</button>
             </article>
-            <article class="actividadesPortada"> <!-- Cumpleaños -->
-                <h2 class="actividadesPortada__titulo">Cumpleaños</h2>
-                <img class="actividadesPortada__img" src="recursos/cumpleanos.jpg" alt="foto cumpleaños">
-                <p class="actividadesPortada__texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum adipisci ab dolorem omnis temporibus? Tempore voluptatem, harum</p>
-                <button class="actividadesPortada__boton">Cotizá tu cumple</button>
-                <button class="actividadesPortada__boton">+ Info</button>
+            <article class="home__actividades--tarjeta home__cumple"> <!-- Cumpleaños -->
+                <h2 class="home__actividades--titulo">Cumpleaños</h2>
+                <img class="home__actividades--img" src="recursos/cumpleanos.jpg" alt="foto cumpleaños">
+                <div class="home__actividades--texto">
+                    <p>¡Vení a festejar tu cumple!</p>
+                    <p>2 horas de cancha + buffet completo para 20 niños y 5 adultos</p>
+                </div>
+                <button class="home__actividades--boton">Cotizá tu cumple</button>
             </article>
-            <article class="actividadesPortada"> <!-- Escuelita -->
-                <h2 class="actividadesPortada__titulo">Escuelita</h2>
-                <img class="actividadesPortada__img" src="recursos/escuelita.jpg" alt="foto niños en escuelita de futbol">
-                <p class="actividadesPortada__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse blanditiis fuga, autem sunt similique excepturi ipsa voluptatibus</p>
-                <button class="actividadesPortada__boton">Anotate</button>
-                <button class="actividadesPortada__boton">+ Info</button>
+            <article class="home__actividades--tarjeta home__escuelita"> <!-- Escuelita -->
+                <h2 class="home__actividades--titulo">Escuelita</h2>
+                <img class="home__actividades--img" src="recursos/escuelita.jpg" alt="foto niños en escuelita de futbol">
+                <div class="home__actividades--texto">
+                    <p>Escuela de fútbol femenino y masculino para todas las edades</p>
+                    <p>¡Anotate!</p>
+                </div>
+                <button class="home__actividades--boton">Anotate</button>
             </article>
         </section>
     </main>
 
     <footer>
-        <p class="footer__derechos"> LDG (c) Todos los derechos reservados desde 2022</p>
+        <p class="footer__derechos"> LDG Fútbol (c) Todos los derechos reservados desde 2022</p>
         <div class="footer__redes">
             <a href="https://www.facebook.com/"><img class="footer__icono" src="recursos/facebook-square-brands.svg" alt="Facebook"></a>
             <a href="https://www.instagram.com/"><img class="footer__icono" src="recursos/instagram-square-brands.svg" alt="Intagram"></a>

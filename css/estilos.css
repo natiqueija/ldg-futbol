@@ -22,6 +22,12 @@ button {
     margin: 16px;
 }
 
+button:hover {
+    background-color: #21897E;
+    border: rgb(235, 235, 235) solid 1px;
+    color: white;
+}
+
 /* HEADER */
 header {
     position: sticky;
@@ -57,60 +63,160 @@ header {
 
 
 /* BANNERS */
-.banner__principal {
-    height: 400px;
-    width: 600px;
+.banner__titulo {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.850);
+    font-size: 60px;
+    text-shadow: 5px 5px 10px black;
 }
 
-.banner__titulo {
-
+.banner {
     display: flex;
     justify-content: center;
-    font-size: 70px;
-    text-shadow: 2px 2px 5px white;
+    align-items: center;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
 }
 
-/* INDEX */
-
-.torneosPortada {
-    margin: 16px;
+/* HOME */
+.banner__home {
+    background-image: url(../recursos/cancha_de_futbol.jpg);
+    height: 90vh;
 }
 
-.torneosPortada__img {
-    width: 350px;
+.home__torneos {
+    display: grid;
+    grid-template-areas: "masculino femenino mixto";
+    justify-content: space-around;
+    height: 80vh;
+    margin: 40px 0;
 }
 
-.redesPortada {
-    background-color: #21897E;
+.futbol__masculino {
+    grid-area: masculino;
+    background-image: url(../recursos/portada-futbol-masculino.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-.redesPortada__texto {
-    display: inline;
+.futbol__femenino {
+    grid-area: femenino;
+    background-image: url(../recursos/portada-torneo-femenino.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.futbol__mixto {
+    grid-area: mixto;
+    background-image: url(../recursos/portada-futbol-mixto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home__torneos--tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+.home__torneos--titulo {
     color: white;
-    padding: 16px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
 }
 
-.redesPortada__img {
-    display: inline;
-    width: 70px;
+.home__redes {
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 1.2fr 2fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background-color: #21897E;
+    margin: 30px 0;
+}
+
+.home__redes--titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 50px;
+}
+
+.home__redes--logos {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home__redes--texto {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.home__redes--img {
+    width: 100px;
     margin: 0 10px;
 }
 
-.actividadesPortada {
-    margin: 16px;
+.home__actividades {
+    display: grid;
+    grid-template-areas: "alquiler cumple escuelita";
+    justify-content: space-evenly;
 }
 
-.actividadesPortada__img {
+.home__alquiler {
+    grid-area: alquiler;
+}
+
+.home__cumple {
+    grid-area: cumple;
+}
+
+.home__escuelita {
+    grid-area: escuelita;
+}
+
+.home__actividades--tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #21897f0a;
+    margin: 16px;
+    border: #21897E solid 1px;
+    width: 30vw;
+}
+
+.home__actividades--titulo {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.home__actividades--img {
     width: 350px;
 }
 
-.actividadesPortada__boton {
+.home__actividades--texto {
+    text-align: center;
+    margin: 16px;
+    padding: 0 40px;
+    line-height: 25px;
+}
+
+.home__actividades--boton {
     width: 120px;
     height: 30px;
     font-size: 10px;
 }
 
 /* NOSOTROS */
+
+.banner__nosotros {
+    background-image: url(../recursos/nosotros-banner.jpg);
+    background-position: 80% 20%;
+}
 
 .nosotros__titulo {
     text-align: center;
@@ -152,6 +258,11 @@ header {
 
 /* ACTIIDADES */
 
+.banner__actividades {
+    background-image: url(../recursos/actividades.jpg);
+    background-position: bottom;
+}
+
 .actividades__titulo {
     text-align: center;
     font-size: 25px;
@@ -171,6 +282,10 @@ header {
 }
 
 /* TORNEOS */
+
+.banner__torneos {
+    background-image: url(../recursos/torneos_banner.jpg);
+}
 
 .torneos__img {
     width: 400px;
@@ -216,6 +331,8 @@ header {
 }
 
 .banner__contacto {
+    display: flex;
+    justify-content: center;
     grid-area: banner;
     height: 90vh;
     background-image: url("../recursos/contactos_banner.jpg");
