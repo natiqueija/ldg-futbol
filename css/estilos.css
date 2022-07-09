@@ -211,6 +211,7 @@ header {
     font-size: 10px;
 }
 
+
 /* NOSOTROS */
 
 .banner__nosotros {
@@ -218,42 +219,118 @@ header {
     background-position: 80% 20%;
 }
 
-.nosotros__titulo {
-    text-align: center;
-    font-size: 25px;
-    margin: 20px;
-}
-
-.nosotros__texto {
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
     text-align: center;
     padding: 0 150px;
     line-height: 35px;
     font-size: 20px;
 }
 
-.galeria {
-    margin: 20px;
+.nosotros__texto {
+    padding: 5px;
 }
 
-.galeria__img {
-    width: 300px;
+.galeria {
+    display: grid;
+    height: 90vh;
+    margin: 16px;
+    grid-template-areas: "uno dos tres cuatro"
+                        "cinco seis siete ocho";
+    grid-gap: 1rem;
+}
+
+.galeria__uno {
+    grid-area: uno;
+    background-image: url(../recursos/galeria1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__dos {
+    grid-area: dos;
+    background-image: url(../recursos/galeria2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__tres {
+    grid-area: tres;
+    background-image: url(../recursos/galeria3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__cuatro {
+    grid-area: cuatro;
+    background-image: url(../recursos/galeria4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__cinco {
+    grid-area: cinco;
+    background-image: url(../recursos/galeria5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__seis {
+    grid-area: seis;
+    background-image: url(../recursos/galeria6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__siete {
+    grid-area: siete;
+    background-image: url(../recursos/galeria7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.galeria__ocho {
+    grid-area: ocho;
+    background-image: url(../recursos/galeria8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ubicacion {
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "mapa texto";
 }
 
 .ubicacion__titulo {
+    grid-area: titulo;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     margin: 20px;
 }
 
 .ubicacion__mapa {
-    margin: 0 16px;
+    grid-area: mapa;
+    margin: 0 30px 10px 30px;
 }
 
 .ubicacion__texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 150px;
-    line-height: 25px;
     font-size: 18px;
+    margin: 30px;
+}
+
+.ubicacion__texto--parrafo {
+    margin: 5px;
 }
 
 /* ACTIIDADES */
