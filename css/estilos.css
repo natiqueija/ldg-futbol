@@ -340,9 +340,13 @@ header {
     background-position: bottom;
 }
 
+.actividades {
+    margin: 8vh;
+}
+
 .actividades__titulo {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     margin: 20px;
 }
 
@@ -353,10 +357,80 @@ header {
     line-height: 35px;
 }
 
-.actividades__banner {
-    width: 400px;
-    padding: 16px;
+.actividades__galeria {
+    display: grid;
+    height: 50vh;
+    margin: 16px;
+    grid-template-areas: "foto1 foto2 foto3";
+    grid-gap: 1rem;
 }
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.alquiler1 {
+    background-image: url(../recursos/alquiler-canchas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.alquiler2 {
+    background-image: url(../recursos/alquiler-canchas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.alquiler3 {
+    background-image: url(../recursos/alquiler-canchas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.escuelita1 {
+    background-image: url(../recursos/escuelita.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.escuelita2 {
+    background-image: url(../recursos/escuelita.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.escuelita3 {
+    background-image: url(../recursos/escuelita.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cumple1 {
+    background-image: url(../recursos/cumpleanos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cumple2 {
+    background-image: url(../recursos/cumpleanos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cumple3 {
+    background-image: url(../recursos/cumpleanos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 
 /* TORNEOS */
 
