@@ -33,7 +33,6 @@ header {
     position: sticky;
     top: 0px;
     background-color: rgb(235, 235, 235);
-    padding: 0 16px;
 }
 
 .header__nav {
@@ -51,6 +50,7 @@ header {
 .header__menu {
     grid-area: secciones;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -58,7 +58,7 @@ header {
 .header__secciones a {
     text-decoration: none;
     color: #21897E;
-    font-size: 20px;
+/*     font-size: 20px;  */
 }
 
 
@@ -116,6 +116,7 @@ header {
 
 .home__torneos--tarjeta {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 30vw;
@@ -341,7 +342,14 @@ header {
 }
 
 .actividades {
-    margin: 8vh;
+    margin: 5vh;
+}
+
+.actividades__seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .actividades__titulo {
@@ -355,6 +363,14 @@ header {
     font-size: 18px;
     padding: 0 100px;
     line-height: 35px;
+}
+
+.actividades__boton {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 16px;
 }
 
 .actividades__galeria {
@@ -438,25 +454,58 @@ header {
     background-image: url(../recursos/torneos_banner.jpg);
 }
 
+.torneos__grid {
+    display: grid;
+    grid-template-areas: "masculino"
+                        "femenino"
+                        "mixto";
+}
+
+.torneos__masculino {
+    grid-area: masculino;
+}
+
+.torneos__femenino {
+    grid-area: femenino;
+    flex-direction: row-reverse;
+}
+
+.torneos__mixto {
+    grid-area: mixto;
+}
+
+.torneos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 200px;
+}
+
 .torneos__img {
-    width: 400px;
-    padding: 20px;
+    height: 70vh;
+    width: auto;
+}
+
+.torneos__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .torneos__titulo {
-    margin: 0 16px;
-    text-align: center;
+    font-size: 40px;
 }
 
 .torneos__lista {
-    margin: 20px;
-    list-style: none;
+    margin: 10px 40px;
 }
 
 .torneos__datos {
     text-align: center;
-    line-height: 30px;
-
+    font-size: 25px;
+    margin: 10px;
 }
 
 .torneos__boton {
