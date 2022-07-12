@@ -601,3 +601,14 @@ footer {
     width: 25px;
     margin: 5px;
 }
+
+
+/* MEDIA QUERIE DE CELULAR */
+@media (min-width: 320px) and (max-width: 576px) {
+
+}
+
+/* MEDIA QUERIE DE TABLET */
+@media (min-width: 320px) and (max-width: 576px) {
+
+}
