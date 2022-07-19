@@ -533,7 +533,7 @@ header {
     display: flex;
     justify-content: center;
     grid-area: banner;
-    height: 90vh;
+    height: 100vh;
     background-image: url("../recursos/contactos_banner.jpg");
     background-size: cover;
     background-position: center;
@@ -554,12 +554,12 @@ form {
 }
 
 .formulario__dato--recuadro {
-    width: 450px;
+    width: 30vw;
     height: 30px;
 }
 
 .formulario__dato--mensaje {
-    width: 450px;
+    width: 30vw;
     height: 80px;
 }
 
@@ -761,6 +761,71 @@ footer {
         display: none;
     }
 
+    /* TORNEOS */
+
+    .torneos__masculino {
+        flex-direction: column;
+    }
+    
+    .torneos__femenino {
+        flex-direction: column;
+    }
+    
+    .torneos__mixto {
+        flex-direction: column;
+    }
+
+    .torneos {
+        justify-content: space-between; 
+        margin: 16px auto;
+        align-items: center;
+    }
+
+    .torneos__img {
+        height: auto;
+        width: 70vw;
+    }
+
+    .torneos__titulo {
+        font-size: 25px;
+    }
+    
+    .torneos__datos {
+        font-size: 15px;
+    }
+    
+    .torneos__boton {
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    /* CONTACTO */
+
+    .contacto__grid {
+        grid-template-columns: 100vw;
+        grid-template-areas: "banner"
+                            "form";
+    }
+
+    .banner__contacto {
+        align-items: center;
+        height: 45vh;
+    }
+
+    .formulario__dato--recuadro {
+        width: 80vw;
+    }
+    
+    .formulario__dato--mensaje {
+        width: 80vw;
+    }
+
+    .formulario__boton {
+        width: 100px;
+        height: 40px;
+        font-size: 11px;
+    }
 
 }
 /* MEDIA QUERIE DE TABLET */
@@ -848,6 +913,10 @@ footer {
 
     /* TORNEOS */
 
+    .torneos {
+        margin: 16px;
+    }
+
     .torneos__img {
         height: 50vh;
     }
@@ -865,4 +934,30 @@ footer {
         height: 40px;
         font-size: 15px;
     }
+
+    /* CONTACTO */
+
+    .titulo__contacto {
+        font-size: 50px;
+    }
+
+    .contacto__grid {
+        grid-template-columns: 50vw 50vw;
+    }
+
+    .formulario__dato--recuadro {
+        width: 40vw;
+    }
+    
+    .formulario__dato--mensaje {
+        width: 40vw;
+    }
+
+    .formulario__boton {
+        width: 100px;
+        height: 40px;
+        font-size: 11px;
+        margin: 10px;
+    }
+
 }
