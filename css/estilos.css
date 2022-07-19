@@ -26,6 +26,8 @@ button:hover {
     background-color: #21897E;
     border: rgb(235, 235, 235) solid 1px;
     color: white;
+    transform: scale(1.1,1.1);
+    transition: all 0.3s;
 }
 
 /* HEADER */
