@@ -68,37 +68,15 @@ ul {
 
 /* HOME */
 .home__torneos {
-  display: grid;
-  grid-template-areas: "masculino femenino mixto";
-  justify-content: space-around;
-  height: 80vh;
-  margin: 40px 0; }
-  .home__torneos .futbol__masculino {
-    grid-area: masculino;
-    background-image: url(../recursos/portada-futbol-masculino.jpg);
-    background-position: center;
-    background-size: cover; }
-  .home__torneos .futbol__femenino {
-    grid-area: femenino;
-    background-image: url(../recursos/portada-torneo-femenino.jpg);
-    background-position: center;
-    background-size: cover; }
-  .home__torneos .futbol__mixto {
-    grid-area: mixto;
-    background-image: url(../recursos/portada-futbol-mixto.jpg);
-    background-position: center;
-    background-size: cover; }
-  .home__torneos--tarjeta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 30vw; }
-  .home__torneos--titulo {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    text-shadow: 2px 2px 5px black; }
+  width: 70vw;
+  margin-top: 25px; }
+  .home__torneos--img {
+    height: 85vh; }
+
+.home__carrousel--titulo {
+  color: white;
+  font-size: 60px;
+  text-shadow: 5px 5px 10px black; }
 
 .home__redes {
   width: auto;
@@ -356,14 +334,11 @@ footer {
     font-size: 40px; }
   /* HOME */
   .home__torneos {
-    grid-template-areas: "masculino" "femenino" "mixto";
-    justify-content: space-around;
-    height: 90vh;
-    gap: 5px; }
-  .home__torneos--tarjeta {
-    width: 85vw; }
-  .home__torneos--titulo {
-    font-size: 20px; }
+    width: 90vw; }
+    .home__torneos--img {
+      height: 50vh; }
+  .home__carrousel--titulo {
+    font-size: 10px; }
   .home__redes {
     height: 40vh;
     grid-template-columns: 1fr;
@@ -475,6 +450,10 @@ footer {
 
 /* MEDIA QUERIE DE TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
+  .home__torneos {
+    width: 90vw; }
+  .home__carrousel--titulo {
+    font-size: 30px; }
   .home__redes {
     height: 40vh;
     grid-template-columns: 1fr;
