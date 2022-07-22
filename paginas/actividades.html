@@ -12,20 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Actividades - LDG Fútbol</title>
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <a href="../index.html"><img class="header__logo" src="../recursos/logo-ldg.png" alt="logo LDG futbol"></a>
-            <ul class="header__menu">
-                <li class="header__secciones"><a href="nosotros.html">Nosotros</a></li>
-                <li class="header__secciones"><a href="actividades.html">Actividades</a></li>
-                <li class="header__secciones"><a href="torneos.html">Torneos</a></li>
-                <li class="header__secciones"><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="header__logo" src="../recursos/logo-ldg.png" alt="Logo LDG Futbol">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__secciones">
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -41,7 +60,7 @@
                 <p class="actividades__texto">¡Vení a disfrutar de las mejores canchas de césped sintético de toda CABA!</p>
                 <p class="actividades__texto">Contamos con 3 canchas de fútbol 5 y 1 cancha de fútbol 8</p>
                 <p class="actividades__texto">Abiertos todos los días de 17:00hs a 01:00hs</p>
-                <button class="actividades__boton">Reservá tu cancha</button>
+                <button class="botones actividades__boton">Reservá tu cancha</button>
             </article>
             <article class="actividades__galeria">
                 <div class="foto1 alquiler1"></div>
@@ -56,7 +75,7 @@
                 <h2 class="actividades__titulo">Escuelita de fútbol</h2>
                 <p class="actividades__texto">Vení a divertirte y aprender a jugar este hermoso deporte a cargo de excelentes profesionales de la educación física con especial enfoque en el aprendizaje de valores y juego en equipo.</p>
                 <p class="actividades__texto">La escuelita está pensada para cualquier persona interesada en el fútbol y está dividida en grupos por edad.</p>
-                <button class="actividades__boton">Anotate</button>
+                <button class="botones actividades__boton">Anotate</button>
             </article>
             <article class="actividades__galeria">
                 <div class="foto1 escuelita1"></div>
@@ -71,7 +90,7 @@
                 <h2 class="actividades__titulo">¡Festejá tu cumple dentro de la cancha!</h2>
                 <p class="actividades__texto">Una cumpleaños diferente para los chicos, lleno de fútbol y diversión. La actividad va a estar guiada por 2 profes para generar una tarde de juegos inolvidable!!</p>
                 <p class="actividades__texto">Además, incluye el buffet completo para 20 chicos y 5 adultos. ¡Para que no tengas que preocuparte por nada!</p>
-                <button class="actividades__boton">Cotizá tu cumple</button>
+                <button class="botones actividades__boton">Cotizá tu cumple</button>
             </article>
                 <article class="actividades__galeria">
                 <div class="foto1 cumple1"></div>
@@ -89,5 +108,8 @@
             <a href="https://www.youtube.com/"><img class="footer__icono" src="../recursos/youtube-square-brands.svg" alt="Youtube"></a>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,882 @@
+*{
+    margin: 0px; /* MARGEN EXTERNO */
+    padding: 0px; /* MARGEN INTERNO */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #1B264F;
+}
+
+ul {
+    list-style: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border: #21897E solid 1px;
+    border-radius: 25px;
+    color: #21897E;
+    padding: 10px;
+    margin: 2px;
+    &:hover {
+        background-color: #21897E;
+        border: rgb(235, 235, 235) solid 1px;
+        color: white;
+        transform: scale(1.1,1.1);
+        transition: all 0.3s;
+    }
+}
+
+/* HEADER */
+.header {
+    background-color: rgb(235, 235, 235);
+    &__logo {
+        width: 80px;
+        margin: 0 30px;
+    }
+    
+    &__secciones a {
+        text-decoration: none;
+        color: #21897E;
+        font-size: 20px;
+        margin: 0 20px;
+    }
+}
+
+/* BANNERS */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+
+    &__titulo {
+        font-family: 'Noto Sans', sans-serif;
+        color: rgba(255, 255, 255, 0.850);
+        font-size: 60px;
+        text-shadow: 5px 5px 10px black;
+    }
+
+    &__home {
+        background-image: url(../recursos/cancha_de_futbol.jpg);
+        height: 90vh;
+    }
+
+    &__nosotros {
+        background-image: url(../recursos/nosotros-banner.jpg);
+        background-position: 80% 20%;
+    }
+    
+    &__actividades {
+        background-image: url(../recursos/actividades.jpg);
+        background-position: bottom;
+    }
+
+    &__torneos {
+        background-image: url(../recursos/torneos_banner.jpg);
+    }
+}
+
+/* HOME */
+.home__torneos {
+    display: grid;
+    grid-template-areas: "masculino femenino mixto";
+    justify-content: space-around;
+    height: 80vh;
+    margin: 40px 0;
+}
+
+.futbol__masculino {
+    grid-area: masculino;
+    background-image: url(../recursos/portada-futbol-masculino.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.futbol__femenino {
+    grid-area: femenino;
+    background-image: url(../recursos/portada-torneo-femenino.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.futbol__mixto {
+    grid-area: mixto;
+    background-image: url(../recursos/portada-futbol-mixto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home__torneos--tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+}
+
+.home__torneos--titulo {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+.home__redes {
+    width: auto;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    background-color: #21897E;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.home__redes--titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 30px;
+}
+
+.home__redes--logos {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home__redes--texto {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.home__redes--img {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.home__actividades {
+    display: grid;
+    grid-template-areas: "alquiler cumple escuelita";
+    justify-content: space-evenly;
+}
+
+.home__alquiler {
+    grid-area: alquiler;
+}
+
+.home__cumple {
+    grid-area: cumple;
+}
+
+.home__escuelita {
+    grid-area: escuelita;
+}
+
+.home__actividades--tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #21897f0a;
+    margin: 16px;
+    border: #21897E solid 1px;
+    width: 30vw;
+}
+
+.home__actividades--titulo {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.home__actividades--img {
+    width: 20vw;
+}
+
+.home__actividades--texto {
+    text-align: center;
+    margin: 15px;
+    line-height: 25px;
+}
+
+.home__actividades--boton {
+    width: 140px;
+    height: 30px;
+    font-size: 12px;
+}
+
+
+/* NOSOTROS */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    text-align: center;
+    padding: 0 100px;
+    margin: 30px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.nosotros__texto {
+    margin: 10px;
+}
+
+.galeria {
+    width: 50vw;
+}
+
+.galeria__img {
+    height: 90vh;
+}
+
+.ubicacion {
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "mapa texto";
+    margin: 20px;
+}
+
+.ubicacion__titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.ubicacion__mapa {
+    grid-area: mapa;
+    width: 40vw;
+    height: 50vh;
+    margin: 0 30px 10px 30px;
+}
+
+.ubicacion__texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+}
+
+.ubicacion__texto--parrafo {
+    margin: 5px;
+}
+
+/* ACTIIDADES */
+
+.actividades {
+    margin: 5vh;
+}
+
+.actividades__seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actividades__titulo {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.actividades__texto {
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.actividades__boton {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.actividades__galeria {
+    display: grid;
+    height: 50vh;
+    margin: 16px;
+    grid-template-areas: "foto1 foto2 foto3";
+    grid-gap: 1rem;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.alquiler1 {
+    background-image: url(../recursos/alquiler-canchas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.alquiler2 {
+    background-image: url(../recursos/alquiler-canchas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.alquiler3 {
+    background-image: url(../recursos/alquiler-canchas.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.escuelita1 {
+    background-image: url(../recursos/escuelita.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.escuelita2 {
+    background-image: url(../recursos/escuelita.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.escuelita3 {
+    background-image: url(../recursos/escuelita.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cumple1 {
+    background-image: url(../recursos/cumpleanos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cumple2 {
+    background-image: url(../recursos/cumpleanos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cumple3 {
+    background-image: url(../recursos/cumpleanos.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* TORNEOS */
+
+.torneos__grid {
+    display: grid;
+    grid-template-areas: "masculino"
+                        "femenino"
+                        "mixto";
+}
+
+.torneos__masculino {
+    grid-area: masculino;
+}
+
+.torneos__femenino {
+    grid-area: femenino;
+    flex-direction: row-reverse;
+}
+
+.torneos__mixto {
+    grid-area: mixto;
+}
+
+.torneos {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.torneos__img {
+    height: 70vh;
+    width: auto;
+}
+
+.torneos__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.torneos__titulo {
+    margin: 5px;
+    font-size: 35px;
+}
+
+.torneos__lista {
+    margin: 5px;
+    padding: 0;
+}
+
+.torneos__datos {
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.torneos__boton {
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* CONTACTO */
+
+.contacto__grid {
+    display: grid;
+    grid-template-columns: 40vw auto;
+    grid-template-areas: "form banner";
+    align-items: center;
+}
+
+.contacto__formulario {
+    grid-area: form;
+    justify-self: center;
+}
+
+.banner__contacto {
+    display: flex;
+    justify-content: center;
+    grid-area: banner;
+    height: 90vh;
+    background-image: url("../recursos/contactos_banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.formulario__dato {
+    padding: 6px;
+}
+
+.formulario__dato--titulo {
+    display: block;
+    padding: 6px;
+}
+
+.formulario__dato--recuadro {
+    width: 30vw;
+    height: 30px;
+}
+
+.formulario__dato--mensaje {
+    width: 30vw;
+    height: 80px;
+}
+
+.formulario__boton {
+    display: inline;
+    width: 140px;
+    height: 40px;
+}
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-areas: "derechos redes";
+    background-color: rgb(235, 235, 235);
+    padding: 0 24px;
+
+    .footer {
+        &__derechos {
+            grid-area: derechos;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: small;
+        }
+        
+        &__redes {
+            grid-area: redes;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        &__icono {
+            width: 25px;
+            margin: 5px;
+        }
+    }
+}
+
+
+
+
+/* MEDIA QUERIE DE CELULAR */
+@media (min-width: 320px) and (max-width: 575px) {
+    /* BANNERS */
+    .banner__titulo {
+        font-size: 40px;
+    }
+
+    /* HOME */
+    .home__torneos {
+        grid-template-areas: "masculino"
+                            "femenino"
+                            "mixto";
+        justify-content: space-around;
+        height: 90vh;
+        gap: 5px;
+    }
+    
+    .home__torneos--tarjeta {
+        width: 85vw;
+    }
+
+    .home__torneos--titulo {
+        font-size: 20px;
+    }
+
+    .home__redes {
+        height: 40vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* margin: 30px 0; */
+    }
+    
+    .home__redes--titulo {
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        font-size: 16px;
+        margin: 16px 20px;
+    }
+    
+    .home__redes--logos {
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+    }
+
+    .home__redes--img {
+        width: 60px;
+    }
+
+    .home__actividades {
+        grid-template-areas: "alquiler"
+                            "cumple"
+                            "escuelita";
+        justify-content: space-evenly;
+    }
+
+    .home__actividades--tarjeta {
+        width: 90vw;
+    }
+
+    .home__actividades--img {
+        width: 60vw;
+    }
+
+    .home__actividades--texto {
+        margin: 5px;
+        padding: 0 10px;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        height: 50vh;
+        padding: 0px;
+        margin: 20px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .nosotros__texto {
+        margin: 5px;
+    }
+
+    
+    .galeria__img {
+        height: 50vh;
+    }
+
+    .ubicacion {
+    grid-template-areas: "titulo"
+                        "texto"
+                        "mapa";
+    }
+
+    .ubicacion__texto {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .ubicacion__mapa {
+        width: 80vw;
+    }
+
+    /* ACTIVIDADES */
+
+    .actividades {
+        margin: 16px;
+    }
+
+    .actividades__titulo {
+        font-size: 25px;
+        margin: 15px;
+    }
+    
+    .actividades__texto {
+        font-size: 14px;
+    }
+    
+    .actividades__boton {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .actividades__galeria {
+        height: 50vh;
+        margin: 16px;
+        grid-template-areas: "foto1";
+    }
+
+    .alquiler2 {
+        display: none;
+    }
+
+    .alquiler3 {
+        display: none;
+    }
+
+    .escuelita2 {
+        display: none;
+    }
+
+    .escuelita3 {
+        display: none;
+    }
+
+    .cumple2 {
+        display: none;
+    }
+
+    .cumple3 {
+        display: none;
+    }
+
+    /* TORNEOS */
+
+    .torneos__masculino {
+        flex-direction: column;
+    }
+    
+    .torneos__femenino {
+        flex-direction: column;
+    }
+    
+    .torneos__mixto {
+        flex-direction: column;
+    }
+
+    .torneos {
+        justify-content: space-between; 
+        margin: 16px auto;
+        align-items: center;
+    }
+
+    .torneos__img {
+        height: auto;
+        width: 70vw;
+    }
+
+    .torneos__titulo {
+        font-size: 25px;
+    }
+    
+    .torneos__datos {
+        font-size: 15px;
+    }
+    
+    .torneos__boton {
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    /* CONTACTO */
+
+    .contacto__grid {
+        grid-template-columns: 100vw;
+        grid-template-areas: "banner"
+                            "form";
+    }
+
+    .banner__contacto {
+        align-items: center;
+        height: 45vh;
+    }
+
+    .formulario__dato--recuadro {
+        width: 80vw;
+    }
+    
+    .formulario__dato--mensaje {
+        width: 80vw;
+    }
+
+    .formulario__boton {
+        width: 100px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+}
+/* MEDIA QUERIE DE TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+    .home__redes {
+        height: 40vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* margin: 30px 0; */
+    }
+    
+    .home__redes--titulo {
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        font-size: 16px;
+        margin: 16px 20px;
+    }
+    
+    .home__redes--logos {
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+    }
+
+    .home__redes--img {
+        width: 80px;
+    }
+
+    
+    .home__actividades {
+        grid-template-areas: "alquiler"
+                            "cumple"
+                            "escuelita";
+        justify-content: space-evenly;
+    }
+
+    .home__actividades--tarjeta {
+        width: 60vw;
+    }
+
+    .home__actividades--img {
+        width: 30vw;
+    }
+
+    .home__actividades--texto {
+        margin: 5px;
+        padding: 0 10px;
+    }
+
+        /* NOSOTROS */
+    .nosotros {
+        padding: 20px;
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .ubicacion__texto {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    /* ACTIVIDADES */
+    .actividades__titulo {
+        font-size: 25px;
+        margin: 15px;
+    }
+    
+    .actividades__texto {
+        font-size: 14px;
+    }
+    
+    .actividades__boton {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .actividades__galeria {
+        height: 35vh;
+        margin: 16px;
+    }
+
+    /* TORNEOS */
+
+    .torneos {
+        margin: 16px;
+    }
+
+    .torneos__img {
+        height: 50vh;
+    }
+
+    .torneos__titulo {
+        font-size: 25px;
+    }
+    
+    .torneos__datos {
+        font-size: 15px;
+    }
+    
+    .torneos__boton {
+        width: 130px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    /* CONTACTO */
+
+    .titulo__contacto {
+        font-size: 50px;
+    }
+
+    .contacto__grid {
+        grid-template-columns: 50vw 50vw;
+    }
+
+    .formulario__dato--recuadro {
+        width: 40vw;
+    }
+    
+    .formulario__dato--mensaje {
+        width: 40vw;
+    }
+
+    .formulario__boton {
+        width: 100px;
+        height: 40px;
+        font-size: 11px;
+        margin: 10px;
+    }
+
+}

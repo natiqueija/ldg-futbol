@@ -1,0 +1,25 @@
+{
+  "name": "proyectocanchitas",
+  "version": "1.0.0",
+  "description": "<h1>LDG Fútbol - Proyecto Coder House</h1>\r <p>Este sitio es para un centro de entrenamiento deportivo pensado para el curso de desarrollo web</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natiqueija/ldg-futbol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natiqueija/ldg-futbol/issues"
+  },
+  "homepage": "https://github.com/natiqueija/ldg-futbol#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

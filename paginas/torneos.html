@@ -12,20 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Torneos - LDG Fútbol</title>
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <a href="../index.html"><img class="header__logo" src="../recursos/logo-ldg.png" alt="logo LDG futbol"></a>
-            <ul class="header__menu">
-                <li class="header__secciones"><a href="nosotros.html">Nosotros</a></li>
-                <li class="header__secciones"><a href="actividades.html">Actividades</a></li>
-                <li class="header__secciones"><a href="torneos.html">Torneos</a></li>
-                <li class="header__secciones"><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="header__logo" src="../recursos/logo-ldg.png" alt="Logo LDG Futbol">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__secciones">
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -48,7 +67,7 @@
                         <li class="torneos__datos">Premio 1er puesto: Estadia completa por dos noches en MDP para todo el equipo.</li>
                         <li class="torneos__datos">Premio 2do puesto: Juego de camisetas personalizadas para el equipo.</li>
                     </ul>
-                    <button class="torneos__boton">¡Anotate!</button>
+                    <button class="botones torneos__boton">¡Anotate!</button>
                 </div>
             </article>
             <!-- Torneo Femenino -->
@@ -63,7 +82,7 @@
                         <li class="torneos__datos">Premio 1er puesto: Estadia completa por dos noches en MDP para todo el equipo.</li>
                         <li class="torneos__datos">Premio 2do puesto: Juego de camisetas personalizadas para el equipo.</li>
                     </ul>
-                    <button class="torneos__boton">¡Anotate!</button>
+                    <button class="botones torneos__boton">¡Anotate!</button>
                 </div>
             </article>
             <!-- Torneo Mixto -->
@@ -78,7 +97,7 @@
                         <li class="torneos__datos">Premio 1er puesto: Estadia completa por dos noches en MDP para todo el equipo.</li>
                         <li class="torneos__datos">Premio 2do puesto: Juego de camisetas personalizadas para el equipo.</li>
                     </ul>
-                    <button class="torneos__boton">¡Anotate!</button>
+                    <button class="botones torneos__boton">¡Anotate!</button>
                 </div>
             </article>
         </section>
@@ -93,5 +112,8 @@
             <a href="https://www.youtube.com/"><img class="footer__icono" src="../recursos/youtube-square-brands.svg" alt="Youtube"></a>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

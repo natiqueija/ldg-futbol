@@ -12,20 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Nosotros - LDG Fútbol</title>
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <a href="../index.html"><img class="header__logo" src="../recursos/logo-ldg.png" alt="logo LDG futbol"></a>
-            <ul class="header__menu">
-                <li class="header__secciones"><a href="nosotros.html">Nosotros</a></li>
-                <li class="header__secciones"><a href="actividades.html">Actividades</a></li>
-                <li class="header__secciones"><a href="torneos.html">Torneos</a></li>
-                <li class="header__secciones"><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg header">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="header__logo" src="../recursos/logo-ldg.png" alt="Logo LDG Futbol">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header__secciones">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneos.html">Torneos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -42,16 +61,45 @@
         </section>
 
         <!-- Predio -->
-        <section class="galeria">
-            <!-- Fotos del predio -->
-            <div class="galeria__uno"></div>
-            <div class="galeria__dos"></div>
-            <div class="galeria__tres"></div>
-            <div class="galeria__cuatro"></div>
-            <div class="galeria__cinco"></div>
-            <div class="galeria__seis"></div>
-            <div class="galeria__siete"></div>
-            <div class="galeria__ocho"></div>
+        <section class="galeria mx-auto">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../recursos/galeria1.jpg" class="galeria__img d-block w-100" alt="Pelota de futbol golpeando la red del arco">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/galeria2.jpg" class="galeria__img d-block w-100" alt="Chicas entrenando futbol de noche con las luces encendidas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/galeria3.jpg" class="galeria__img d-block w-100" alt="Pelota y botin de futbol descansando sobre el campo de juego">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/galeria4.jpg" class="galeria__img d-block w-100" alt="Piernas de niño jugando con una pelota de futbol">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/galeria5.jpg" class="galeria__img d-block w-100" alt="Pelota de futbol y en el fondo el arco">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../recursos/galeria6.jpg" class="galeria__img d-block w-100" alt="Entrenador llevando una bolsa de pelotas de futbol por la cancha">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
         <!-- Ubiación -->
@@ -75,5 +123,8 @@
             <a href="https://www.youtube.com/"><img class="footer__icono" src="../recursos/youtube-square-brands.svg" alt="Youtube"></a>
         </div>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
