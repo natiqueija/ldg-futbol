@@ -73,37 +73,32 @@ ul {
   justify-content: space-around;
   height: 80vh;
   margin: 40px 0; }
-
-.futbol__masculino {
-  grid-area: masculino;
-  background-image: url(../recursos/portada-futbol-masculino.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.futbol__femenino {
-  grid-area: femenino;
-  background-image: url(../recursos/portada-torneo-femenino.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.futbol__mixto {
-  grid-area: mixto;
-  background-image: url(../recursos/portada-futbol-mixto.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.home__torneos--tarjeta {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 30vw; }
-
-.home__torneos--titulo {
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  text-shadow: 2px 2px 5px black; }
+  .home__torneos .futbol__masculino {
+    grid-area: masculino;
+    background-image: url(../recursos/portada-futbol-masculino.jpg);
+    background-position: center;
+    background-size: cover; }
+  .home__torneos .futbol__femenino {
+    grid-area: femenino;
+    background-image: url(../recursos/portada-torneo-femenino.jpg);
+    background-position: center;
+    background-size: cover; }
+  .home__torneos .futbol__mixto {
+    grid-area: mixto;
+    background-image: url(../recursos/portada-futbol-mixto.jpg);
+    background-position: center;
+    background-size: cover; }
+  .home__torneos--tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 30vw; }
+  .home__torneos--titulo {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black; }
 
 .home__redes {
   width: auto;
@@ -114,66 +109,54 @@ ul {
   background-color: #21897E;
   align-items: center;
   margin: 20px 0; }
-
-.home__redes--titulo {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  margin: 30px; }
-
-.home__redes--logos {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  display: flex;
-  justify-content: space-evenly; }
-
-.home__redes--texto {
-  color: white;
-  font-size: 30px;
-  text-align: center; }
-
-.home__redes--img {
-  width: 100px;
-  margin: 0 10px; }
+  .home__redes--titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 30px; }
+  .home__redes--logos {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-evenly; }
+  .home__redes--texto {
+    color: white;
+    font-size: 30px;
+    text-align: center; }
+  .home__redes--img {
+    width: 100px;
+    margin: 0 10px; }
 
 .home__actividades {
   display: grid;
   grid-template-areas: "alquiler cumple escuelita";
   justify-content: space-evenly; }
-
-.home__alquiler {
-  grid-area: alquiler; }
-
-.home__cumple {
-  grid-area: cumple; }
-
-.home__escuelita {
-  grid-area: escuelita; }
-
-.home__actividades--tarjeta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #21897f0a;
-  margin: 16px;
-  border: #21897E solid 1px;
-  width: 30vw; }
-
-.home__actividades--titulo {
-  font-size: 30px;
-  margin: 10px; }
-
-.home__actividades--img {
-  width: 20vw; }
-
-.home__actividades--texto {
-  text-align: center;
-  margin: 15px;
-  line-height: 25px; }
-
-.home__actividades--boton {
-  width: 140px;
-  height: 30px;
-  font-size: 12px; }
+  .home__actividades .home__alquiler {
+    grid-area: alquiler; }
+  .home__actividades .home__cumple {
+    grid-area: cumple; }
+  .home__actividades .home__escuelita {
+    grid-area: escuelita; }
+  .home__actividades--tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #21897f0a;
+    margin: 16px;
+    border: #21897E solid 1px;
+    width: 30vw; }
+  .home__actividades--titulo {
+    font-size: 30px;
+    margin: 10px; }
+  .home__actividades--img {
+    width: 20vw; }
+  .home__actividades--texto {
+    text-align: center;
+    margin: 15px;
+    line-height: 25px; }
+  .home__actividades--boton {
+    width: 140px;
+    height: 30px;
+    font-size: 12px; }
 
 /* NOSOTROS */
 .nosotros {
@@ -187,131 +170,108 @@ ul {
   margin: 30px;
   line-height: 25px;
   font-size: 20px; }
-
-.nosotros__texto {
-  margin: 10px; }
+  .nosotros__texto {
+    margin: 10px; }
 
 .galeria {
   width: 50vw; }
-
-.galeria__img {
-  height: 90vh; }
+  .galeria__img {
+    height: 90vh; }
 
 .ubicacion {
   display: grid;
   grid-template-areas: "titulo titulo" "mapa texto";
   margin: 20px; }
-
-.ubicacion__titulo {
-  grid-area: titulo;
-  text-align: center;
-  font-size: 35px;
-  margin: 20px; }
-
-.ubicacion__mapa {
-  grid-area: mapa;
-  width: 40vw;
-  height: 50vh;
-  margin: 0 30px 10px 30px; }
-
-.ubicacion__texto {
-  grid-area: texto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  margin: 30px; }
-
-.ubicacion__texto--parrafo {
-  margin: 5px; }
+  .ubicacion__titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 35px;
+    margin: 20px; }
+  .ubicacion__mapa {
+    grid-area: mapa;
+    width: 40vw;
+    height: 50vh;
+    margin: 0 30px 10px 30px; }
+  .ubicacion__texto {
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    margin: 30px; }
+    .ubicacion__texto--parrafo {
+      margin: 5px; }
 
 /* ACTIIDADES */
 .actividades {
   margin: 5vh; }
-
-.actividades__seccion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.actividades__titulo {
-  text-align: center;
-  font-size: 30px;
-  margin: 20px; }
-
-.actividades__texto {
-  text-align: center;
-  font-size: 18px;
-  line-height: 35px; }
-
-.actividades__boton {
-  width: 200px;
-  height: 50px;
-  font-size: 20px; }
-
-.actividades__galeria {
-  display: grid;
-  height: 50vh;
-  margin: 16px;
-  grid-template-areas: "foto1 foto2 foto3";
-  grid-gap: 1rem; }
-
-.foto1 {
-  grid-area: foto1; }
-
-.foto2 {
-  grid-area: foto2; }
-
-.foto3 {
-  grid-area: foto3; }
-
-.alquiler1 {
-  background-image: url(../recursos/alquiler-canchas.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.alquiler2 {
-  background-image: url(../recursos/alquiler-canchas.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.alquiler3 {
-  background-image: url(../recursos/alquiler-canchas.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.escuelita1 {
-  background-image: url(../recursos/escuelita.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.escuelita2 {
-  background-image: url(../recursos/escuelita.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.escuelita3 {
-  background-image: url(../recursos/escuelita.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.cumple1 {
-  background-image: url(../recursos/cumpleanos.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.cumple2 {
-  background-image: url(../recursos/cumpleanos.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.cumple3 {
-  background-image: url(../recursos/cumpleanos.jpg);
-  background-position: center;
-  background-size: cover; }
+  .actividades__seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .actividades__titulo {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px; }
+  .actividades__texto {
+    text-align: center;
+    font-size: 18px;
+    line-height: 35px; }
+  .actividades__boton {
+    width: 200px;
+    height: 50px;
+    font-size: 20px; }
+  .actividades__galeria {
+    display: grid;
+    height: 50vh;
+    margin: 16px;
+    grid-template-areas: "foto1 foto2 foto3";
+    grid-gap: 1rem; }
+    .actividades__galeria .foto__uno {
+      grid-area: foto1; }
+    .actividades__galeria .foto__dos {
+      grid-area: foto2; }
+    .actividades__galeria .foto__tres {
+      grid-area: foto3; }
+    .actividades__galeria .alquiler__uno {
+      background-image: url(../recursos/alquiler-canchas.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .alquiler__dos {
+      background-image: url(../recursos/alquiler-canchas.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .alquiler__tres {
+      background-image: url(../recursos/alquiler-canchas.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .escuelita__uno {
+      background-image: url(../recursos/escuelita.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .escuelita__dos {
+      background-image: url(../recursos/escuelita.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .escuelita__tres {
+      background-image: url(../recursos/escuelita.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .cumple__uno {
+      background-image: url(../recursos/cumpleanos.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .cumple__dos {
+      background-image: url(../recursos/cumpleanos.jpg);
+      background-position: center;
+      background-size: cover; }
+    .actividades__galeria .cumple__tres {
+      background-image: url(../recursos/cumpleanos.jpg);
+      background-position: center;
+      background-size: cover; }
 
 /* TORNEOS */
 .torneos__grid {
@@ -332,51 +292,34 @@ ul {
   display: flex;
   justify-content: center;
   margin: 20px 20px; }
-
-.torneos__img {
-  height: 70vh;
-  width: auto; }
-
-.torneos__info {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.torneos__titulo {
-  margin: 5px;
-  font-size: 35px; }
-
-.torneos__lista {
-  margin: 5px;
-  padding: 0; }
-
-.torneos__datos {
-  text-align: center;
-  font-size: 20px;
-  margin: 5px; }
-
-.torneos__boton {
-  width: 180px;
-  height: 50px;
-  font-size: 20px; }
+  .torneos__img {
+    height: 70vh;
+    width: auto; }
+  .torneos__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .torneos__info--titulo {
+      margin: 5px;
+      font-size: 35px; }
+    .torneos__info--lista {
+      margin: 5px;
+      padding: 0; }
+      .torneos__info--lista .torneos__datos {
+        text-align: center;
+        font-size: 20px;
+        margin: 15px; }
+  .torneos__boton {
+    width: 180px;
+    height: 50px;
+    font-size: 20px; }
 
 /* CONTACTO */
-.contacto__grid {
-  display: grid;
-  grid-template-columns: 40vw auto;
-  grid-template-areas: "form banner";
-  align-items: center; }
-
-.contacto__formulario {
-  grid-area: form;
-  justify-self: center; }
-
 .banner__contacto {
   display: flex;
   justify-content: center;
-  grid-area: banner;
   height: 90vh;
   background-image: url("../recursos/contactos_banner.jpg");
   background-size: cover;
@@ -385,26 +328,6 @@ ul {
 form {
   margin: 20px;
   border-radius: 20px; }
-
-.formulario__dato {
-  padding: 6px; }
-
-.formulario__dato--titulo {
-  display: block;
-  padding: 6px; }
-
-.formulario__dato--recuadro {
-  width: 30vw;
-  height: 30px; }
-
-.formulario__dato--mensaje {
-  width: 30vw;
-  height: 80px; }
-
-.formulario__boton {
-  display: inline;
-  width: 140px;
-  height: 40px; }
 
 /* FOOTER */
 footer {
@@ -526,10 +449,10 @@ footer {
   .torneos__img {
     height: auto;
     width: 70vw; }
-  .torneos__titulo {
+  .torneos__info--titulo {
     font-size: 25px; }
   .torneos__datos {
-    font-size: 15px; }
+    font-size: 10px; }
   .torneos__boton {
     width: 130px;
     height: 40px;
@@ -603,8 +526,8 @@ footer {
     margin: 16px; }
   .torneos__img {
     height: 50vh; }
-  .torneos__titulo {
-    font-size: 25px; }
+  .torneos__info--titulo {
+    font-size: 20px; }
   .torneos__datos {
     font-size: 15px; }
   .torneos__boton {

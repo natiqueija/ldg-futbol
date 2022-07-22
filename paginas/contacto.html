@@ -47,42 +47,43 @@
             </div>
         </nav>
     </header>
-    <main class="contacto__grid">
-        <section class="contacto__formulario">
-            <form method="post">
-                <div class="formulario__dato">
-                    <label class="formulario__dato--titulo">Nombre</label>
-                    <input class="formulario__dato--recuadro" type="text">
-                </div>
-                <div class="formulario__dato">
-                    <label class="formulario__dato--titulo">Telefono</label>
-                    <input class="formulario__dato--recuadro" type="number">
-                </div>
-                <div class="formulario__dato">
-                    <label class="formulario__dato--titulo">Email</label>
-                    <input class="formulario__dato--recuadro" type="mail">
-                </div>
-                <div class="formulario__dato">
-                    <label class="formulario__dato--titulo" for="motivo">Motivo de Consulta</label>
-                    <select class="formulario__dato--desplegable" name="motivoDeConsulta" id="motivo">
-                        <option value="cumpleaños">Cumpleaños</option>
-                        <option value="escuelita">Escuelita</option>
-                        <option value="torneos">Torneos</option>
-                        <option value="otros">Otros</option>
+    <main class="container-fluid">
+        <section class="row">
+            <article class="col-xs-12 col-md-12 col-lg-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email@ejemplo.com">
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Motivo de Consulta</option>
+                        <option value="1">Cumpleaños</option>
+                        <option value="2">Escuelita</option>
+                        <option value="3">Torneos</option>
+                        <option value="4">Otros</option>
                     </select>
-                </div>
-                <div class="formulario__dato">
-                    <label class="formulario__dato--titulo">Mensaje</label>
-                    <textarea class="formulario__dato--mensaje"></textarea>
-                </div>
-                <div class="formulario__dato">
-                    <input class="botones formulario__boton" type="submit" value="Enviar consulta">
-                    <input class="botones formulario__boton" type="reset" value="Restablecer">
-                </div>
-            </form>
-        </section>
-        <section class="banner__contacto">
-            <h1 class="banner__titulo titulo__contacto animate__animated animate__pulse">CONTACTO</h1>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Subscribeme al newsletter</label>
+                    </div>
+                    <button class="botones" type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </article>
+            <article class="col-xs-12 col-md-12 col-lg-7 banner__contacto">
+                <h1 class="banner__titulo titulo__contacto animate__animated animate__pulse">CONTACTO</h1>
+            </article>
         </section>
     </main>
     <footer>
