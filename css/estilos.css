@@ -29,7 +29,6 @@ ul {
     transform: scale(1.1, 1.1);
     transition: all 0.3s; }
 
-/* HEADER */
 .header {
   background-color: #ebebeb; }
   .header__logo {
@@ -41,7 +40,25 @@ ul {
     font-size: 20px;
     margin: 0 20px; }
 
-/* BANNERS */
+footer {
+  display: grid;
+  grid-template-areas: "derechos redes";
+  background-color: #ebebeb;
+  padding: 0 24px; }
+  footer .footer__derechos {
+    grid-area: derechos;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: small; }
+  footer .footer__redes {
+    grid-area: redes;
+    display: flex;
+    justify-content: flex-end; }
+  footer .footer__icono {
+    width: 25px;
+    margin: 5px; }
+
 .banner {
   display: flex;
   justify-content: center;
@@ -55,8 +72,7 @@ ul {
     font-size: 60px;
     text-shadow: 5px 5px 10px black; }
   .banner__home {
-    background-image: url(../recursos/cancha_de_futbol.jpg);
-    height: 90vh; }
+    height: 80vh; }
   .banner__nosotros {
     background-image: url(../recursos/nosotros-banner.jpg);
     background-position: 80% 20%; }
@@ -66,12 +82,37 @@ ul {
   .banner__torneos {
     background-image: url(../recursos/torneos_banner.jpg); }
 
-/* HOME */
+.banner__home--img1 {
+  background-image: url(../recursos/cancha_de_futbol.jpg); }
+
+.banner__home--img2 {
+  background-image: url(../recursos/banner_home_2.jpg); }
+
+.banner__home--img3 {
+  background-image: url(../recursos/banner_home_3.jpg); }
+
 .home__torneos {
-  width: 70vw;
-  margin-top: 25px; }
-  .home__torneos--img {
-    height: 85vh; }
+  justify-content: space-evenly; }
+  .home__torneos--tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; }
+
+.futbol__masculino {
+  background-image: url(../recursos/portada-futbol-masculino.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.futbol__femenino {
+  background-image: url(../recursos/portada-torneo-femenino.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.futbol__mixto {
+  background-image: url(../recursos/portada-futbol-mixto.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .home__carrousel--titulo {
   color: white;
@@ -136,7 +177,6 @@ ul {
     height: 30px;
     font-size: 12px; }
 
-/* NOSOTROS */
 .nosotros {
   display: flex;
   flex-direction: column;
@@ -182,7 +222,6 @@ ul {
     .ubicacion__texto--parrafo {
       margin: 5px; }
 
-/* ACTIIDADES */
 .actividades {
   margin: 5vh; }
   .actividades__seccion {
@@ -251,7 +290,6 @@ ul {
       background-position: center;
       background-size: cover; }
 
-/* TORNEOS */
 .torneos__grid {
   display: grid;
   grid-template-areas: "masculino" "femenino" "mixto"; }
@@ -294,7 +332,6 @@ ul {
     height: 50px;
     font-size: 20px; }
 
-/* CONTACTO */
 .banner__contacto {
   display: flex;
   justify-content: center;
@@ -306,26 +343,6 @@ ul {
 form {
   margin: 20px;
   border-radius: 20px; }
-
-/* FOOTER */
-footer {
-  display: grid;
-  grid-template-areas: "derechos redes";
-  background-color: #ebebeb;
-  padding: 0 24px; }
-  footer .footer__derechos {
-    grid-area: derechos;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: small; }
-  footer .footer__redes {
-    grid-area: redes;
-    display: flex;
-    justify-content: flex-end; }
-  footer .footer__icono {
-    width: 25px;
-    margin: 5px; }
 
 /* MEDIA QUERIE DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {

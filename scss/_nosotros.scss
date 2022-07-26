@@ -1,0 +1,62 @@
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    text-align: center;
+    padding: 0 100px;
+    margin: 30px;
+    line-height: 25px;
+    font-size: 20px;
+
+    &__texto {
+        margin: 10px;
+    }
+}
+
+.galeria {
+    width: 50vw;
+
+    &__img {
+        height: 90vh;
+    }
+}
+
+
+.ubicacion {
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "mapa texto";
+    margin: 20px;
+
+    &__titulo {
+        grid-area: titulo;
+        text-align: center;
+        font-size: 35px;
+        margin: 20px;
+    }
+    
+    &__mapa {
+        grid-area: mapa;
+        width: 40vw;
+        height: 50vh;
+        margin: 0 30px 10px 30px;
+    }
+    
+    &__texto {
+        grid-area: texto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        margin: 30px;
+
+        &--parrafo {
+            margin: 5px;
+        }
+    }
+}

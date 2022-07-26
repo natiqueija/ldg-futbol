@@ -1,0 +1,108 @@
+
+.actividades {
+    margin: 5vh;
+    &__seccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__titulo {
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+    }
+    
+    &__texto {
+        text-align: center;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    
+    &__boton {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    &__galeria {
+        display: grid;
+        height: 50vh;
+        margin: 16px;
+        grid-template-areas: "foto1 foto2 foto3";
+        grid-gap: 1rem;
+
+        .foto {
+            &__uno {
+                grid-area: foto1;
+            }
+            
+            &__dos {
+                grid-area: foto2;
+            }
+            
+            &__tres {
+                grid-area: foto3;
+            }
+        }
+        .alquiler {
+            &__uno {
+                background-image: url(../recursos/alquiler-canchas.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            &__dos {
+                background-image: url(../recursos/alquiler-canchas.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            &__tres {
+                background-image: url(../recursos/alquiler-canchas.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+        .escuelita {
+            &__uno {
+                background-image: url(../recursos/escuelita.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            &__dos {
+                background-image: url(../recursos/escuelita.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            &__tres {
+                background-image: url(../recursos/escuelita.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+        }
+        .cumple {
+            &__uno {
+                background-image: url(../recursos/cumpleanos.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            &__dos {
+                background-image: url(../recursos/cumpleanos.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+            
+            &__tres {
+                background-image: url(../recursos/cumpleanos.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

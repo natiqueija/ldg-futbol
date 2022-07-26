@@ -1,0 +1,28 @@
+
+footer {
+    display: grid;
+    grid-template-areas: "derechos redes";
+    background-color: rgb(235, 235, 235);
+    padding: 0 24px;
+
+    .footer {
+        &__derechos {
+            grid-area: derechos;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: small;
+        }
+        
+        &__redes {
+            grid-area: redes;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        &__icono {
+            width: 25px;
+            margin: 5px;
+        }
+    }
+}

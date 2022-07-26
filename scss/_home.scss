@@ -1,0 +1,119 @@
+
+.home__torneos {
+    justify-content: space-evenly;
+    
+    &--tarjeta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+}
+
+.futbol__masculino {
+    background-image: url(../recursos/portada-futbol-masculino.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.futbol__femenino {
+    background-image: url(../recursos/portada-torneo-femenino.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.futbol__mixto {
+    background-image: url(../recursos/portada-futbol-mixto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home__carrousel--titulo {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.home__redes {
+    width: auto;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    background-color: #21897E;
+    align-items: center;
+    margin: 20px 0;
+    
+    &--titulo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 30px;
+    }
+    
+    &--logos {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    &--texto {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    &--img {
+        width: 100px;
+        margin: 0 10px;
+    }
+}
+
+.home__actividades {
+    display: grid;
+    grid-template-areas: "alquiler cumple escuelita";
+    justify-content: space-evenly;
+
+    .home__alquiler {
+        grid-area: alquiler;
+    }
+    
+    .home__cumple {
+        grid-area: cumple;
+    }
+    
+    .home__escuelita {
+        grid-area: escuelita;
+    }
+
+    &--tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #21897f0a;
+        margin: 16px;
+        border: #21897E solid 1px;
+        width: 30vw;
+    }
+    
+    &--titulo {
+        font-size: 30px;
+        margin: 10px;
+    }
+    
+    &--img {
+        width: 20vw;
+    }
+    
+    &--texto {
+        text-align: center;
+        margin: 15px;
+        line-height: 25px;
+    }
+    
+    &--boton {
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

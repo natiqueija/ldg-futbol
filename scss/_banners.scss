@@ -1,0 +1,45 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+
+    &__titulo {
+        font-family: 'Noto Sans', sans-serif;
+        color: rgba(255, 255, 255, 0.850);
+        font-size: 60px;
+        text-shadow: 5px 5px 10px black;
+    }
+
+    &__home {
+        height: 80vh;
+    }
+
+    &__nosotros {
+        background-image: url(../recursos/nosotros-banner.jpg);
+        background-position: 80% 20%;
+    }
+    
+    &__actividades {
+        background-image: url(../recursos/actividades.jpg);
+        background-position: bottom;
+    }
+
+    &__torneos {
+        background-image: url(../recursos/torneos_banner.jpg);
+    }
+}
+
+.banner__home--img1 {
+    background-image: url(../recursos/cancha_de_futbol.jpg);
+}
+
+.banner__home--img2 {
+    background-image: url(../recursos/banner_home_2.jpg);
+}
+
+.banner__home--img3 {
+    background-image: url(../recursos/banner_home_3.jpg);
+}
