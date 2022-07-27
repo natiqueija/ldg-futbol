@@ -1,5 +1,5 @@
 .header {
-    background-color: rgb(235, 235, 235);
+    background-color: $color-base;
     &__logo {
         width: 80px;
         margin: 0 30px;
@@ -8,7 +8,7 @@
     &__secciones a {
         text-decoration: none;
         color: #21897E;
-        font-size: 20px;
+        font-size: 1.4rem;
         margin: 0 20px;
     }
 }

@@ -1,3 +1,14 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "banners";
+@import "paginas/index";
+@import "paginas/nosotros";
+@import "paginas/actividades";
+@import "paginas/torneos";
+@import "paginas/contacto";
+@import "mediaqueries";
+
 *{
     margin: 0px; /* MARGEN EXTERNO */
     padding: 0px; /* MARGEN INTERNO */
@@ -5,8 +16,8 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #1B264F;
+    font-family: $font-principal;
+    color: $color-textos;
 }
 
 ul {
@@ -17,27 +28,18 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(235, 235, 235);
-    border: #21897E solid 1px;
+    background-color: $color-base;
+    border: $color-principal solid 1px;
     border-radius: 25px;
-    color: #21897E;
+    color: $color-principal;
     padding: 10px;
     margin: 10px;
     &:hover {
-        background-color: #21897E;
-        border: rgb(235, 235, 235) solid 1px;
+        background-color:$color-principal;
+        border: $color-base solid 1px;
         color: white;
         transform: scale(1.1,1.1);
         transition: all 0.3s;
     }
 }
 
-@import "header";
-@import "footer";
-@import "banners";
-@import "index";
-@import "nosotros";
-@import "actividades";
-@import "torneos";
-@import "contacto";
-@import "mediaqueries";

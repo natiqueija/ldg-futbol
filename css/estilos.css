@@ -1,34 +1,7 @@
-* {
-  margin: 0px;
-  /* MARGEN EXTERNO */
-  padding: 0px;
-  /* MARGEN INTERNO */
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Raleway', sans-serif;
-  color: #1B264F; }
-
-ul {
-  list-style: none; }
-
-.botones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ebebeb;
-  border: #21897E solid 1px;
-  border-radius: 25px;
-  color: #21897E;
-  padding: 10px;
-  margin: 10px; }
-  .botones:hover {
-    background-color: #21897E;
-    border: #ebebeb solid 1px;
-    color: white;
-    transform: scale(1.1, 1.1);
-    transition: all 0.3s; }
-
+@charset "UTF-8";
+/* COLORES */
+/* LETRAS */
+/* TAMAÑO LETRAS */
 .header {
   background-color: #ebebeb; }
   .header__logo {
@@ -37,7 +10,7 @@ ul {
   .header__secciones a {
     text-decoration: none;
     color: #21897E;
-    font-size: 20px;
+    font-size: 1.4rem;
     margin: 0 20px; }
 
 footer {
@@ -69,7 +42,7 @@ footer {
   background-size: cover;
   background-position: center; }
   .banner__titulo {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     color: rgba(255, 255, 255, 0.85);
     font-size: 4rem;
     text-shadow: 5px 5px 10px black;
@@ -114,7 +87,7 @@ footer {
     background-size: cover;
     background-position: center; }
   .home__torneos--titulo {
-    color: white;
+    color: #ebebeb;
     font-size: 3rem;
     text-shadow: 5px 5px 10px black; }
 
@@ -174,9 +147,9 @@ footer {
     padding: 0 2rem;
     line-height: 25px; }
   .home__actividades--boton {
-    width: 140px;
-    height: 30px;
-    font-size: 0.8rem; }
+    width: 180px;
+    height: 40px;
+    font-size: 1.2rem; }
 
 .nosotros {
   display: flex;
@@ -204,7 +177,7 @@ footer {
   .ubicacion__titulo {
     grid-area: titulo;
     text-align: center;
-    font-size: 35px;
+    font-size: 2rem;
     margin: 20px; }
   .ubicacion__mapa {
     grid-area: mapa;
@@ -218,7 +191,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     margin: 30px; }
     .ubicacion__texto--parrafo {
       margin: 5px; }
@@ -232,16 +205,16 @@ footer {
     align-items: center; }
   .actividades__titulo {
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     margin: 20px; }
   .actividades__texto {
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 35px; }
   .actividades__boton {
     width: 200px;
     height: 50px;
-    font-size: 20px; }
+    font-size: 1.2rem; }
   .actividades__galeria {
     display: grid;
     height: 50vh;
@@ -323,16 +296,14 @@ footer {
       .torneos__info--lista .torneos__datos {
         text-align: center;
         margin: 15px; }
+      .torneos__info--lista li {
+        font-size: 1rem; }
+    .torneos__info h2 {
+      font-size: 2rem; }
   .torneos__boton {
-    width: 180px;
+    width: 160px;
     height: 50px;
-    font-size: 20px; }
-
-h2.torneos__info--titulo {
-  font-size: 2rem; }
-
-li.torneos__datos {
-  font-size: 1rem; }
+    font-size: 1.2rem; }
 
 .banner__contacto {
   display: flex;
@@ -354,32 +325,32 @@ form {
   /* HOME */
   .home__torneos--tarjeta {
     height: 30vh; }
-  .futbol__femenino {
+  .home__torneos .futbol__femenino {
     background-position: 80% 20%; }
   .home__redes {
     height: 50vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; }
-  .home__redes--titulo {
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
-    font-size: 1rem;
-    margin: 16px 20px; }
-  .home__redes--logos {
-    grid-column: 1 / 1;
-    grid-row: 2 / 3; }
-  .home__redes--img {
-    width: 60px; }
+    .home__redes--titulo {
+      grid-column: 1 / 1;
+      grid-row: 1 / 2;
+      font-size: 1rem;
+      margin: 16px 20px; }
+    .home__redes--logos {
+      grid-column: 1 / 1;
+      grid-row: 2 / 3; }
+    .home__redes--img {
+      width: 60px; }
   .home__actividades {
     grid-template-areas: "alquiler" "cumple" "escuelita";
     justify-content: space-evenly; }
-  .home__actividades--tarjeta {
-    width: 90vw; }
-  .home__actividades--img {
-    width: 60vw; }
-  .home__actividades--texto {
-    margin: 5px;
-    padding: 0 10px; }
+    .home__actividades--tarjeta {
+      width: 90vw; }
+    .home__actividades--img {
+      width: 60vw; }
+    .home__actividades--texto {
+      margin: 5px;
+      padding: 0 10px; }
   /* NOSOTROS */
   .nosotros {
     height: 50vh;
@@ -387,110 +358,92 @@ form {
     margin: 20px;
     line-height: 20px;
     font-size: 1rem; }
-  .nosotros__texto {
-    margin: 5px; }
+    .nosotros__texto {
+      margin: 5px; }
   .galeria__img {
     height: 50vh; }
   .ubicacion {
     grid-template-areas: "titulo" "texto" "mapa"; }
-  .ubicacion__texto {
-    font-size: 15px;
-    margin: 10px; }
-  .ubicacion__mapa {
-    width: 80vw; }
+    .ubicacion__texto {
+      font-size: 15px;
+      margin: 10px; }
+    .ubicacion__mapa {
+      width: 80vw; }
   /* ACTIVIDADES */
   .actividades {
     margin: 16px; }
-  .actividades__titulo {
-    font-size: 25px;
-    margin: 15px; }
-  .actividades__texto {
-    font-size: 14px; }
-  .actividades__boton {
-    width: 150px;
-    height: 40px;
-    font-size: 15px; }
-  .actividades__galeria {
-    height: 50vh;
-    margin: 16px;
-    grid-template-areas: "foto1"; }
-  .alquiler2 {
-    display: none; }
-  .alquiler3 {
-    display: none; }
-  .escuelita2 {
-    display: none; }
-  .escuelita3 {
-    display: none; }
-  .cumple2 {
-    display: none; }
-  .cumple3 {
-    display: none; }
+    .actividades__titulo {
+      font-size: 25px;
+      margin: 15px; }
+    .actividades__texto {
+      font-size: 14px; }
+    .actividades__boton {
+      width: 150px;
+      height: 40px;
+      font-size: 15px; }
+    .actividades__galeria {
+      height: 50vh;
+      margin: 16px;
+      grid-template-areas: "foto1"; }
+      .actividades__galeria .alquiler__dos {
+        display: none; }
+      .actividades__galeria .alquiler__tres {
+        display: none; }
+      .actividades__galeria .escuelita__dos {
+        display: none; }
+      .actividades__galeria .escuelita__tres {
+        display: none; }
+      .actividades__galeria .cumple__dos {
+        display: none; }
+      .actividades__galeria .cumple__tres {
+        display: none; }
   /* TORNEOS */
-  .torneos__masculino {
+  .torneos__grid .torneos__masculino {
     flex-direction: column; }
-  .torneos__femenino {
+  .torneos__grid .torneos__femenino {
     flex-direction: column; }
-  .torneos__mixto {
+  .torneos__grid .torneos__mixto {
     flex-direction: column; }
   .torneos {
     justify-content: space-between;
     margin: 16px auto;
     align-items: center; }
-  .torneos__img {
-    width: 70vw;
-    height: auto; }
-  .torneos__boton {
-    width: 130px;
-    height: 40px;
-    font-size: 15px; }
-  /* CONTACTO */
-  .contacto__grid {
-    grid-template-columns: 100vw;
-    grid-template-areas: "banner" "form"; }
-  .banner__contacto {
-    align-items: center;
-    height: 45vh; }
-  .formulario__dato--recuadro {
-    width: 80vw; }
-  .formulario__dato--mensaje {
-    width: 80vw; }
-  .formulario__boton {
-    width: 100px;
-    height: 40px;
-    font-size: 11px; } }
+    .torneos__img {
+      width: 70vw;
+      height: auto; }
+    .torneos__boton {
+      width: 130px;
+      height: 40px;
+      font-size: 15px; } }
 
 /* MEDIA QUERIE DE TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
   .home__torneos {
     width: 90vw; }
-  .home__carrousel--titulo {
-    font-size: 30px; }
   .home__redes {
     height: 40vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* margin: 30px 0; */ }
-  .home__redes--titulo {
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
-    font-size: 16px;
-    margin: 16px 20px; }
-  .home__redes--logos {
-    grid-column: 1 / 1;
-    grid-row: 2 / 3; }
-  .home__redes--img {
-    width: 80px; }
+    grid-template-rows: 1fr 1fr; }
+    .home__redes--titulo {
+      grid-column: 1 / 1;
+      grid-row: 1 / 2;
+      font-size: 16px;
+      margin: 16px 20px; }
+    .home__redes--logos {
+      grid-column: 1 / 1;
+      grid-row: 2 / 3; }
+    .home__redes--img {
+      width: 80px; }
   .home__actividades {
     grid-template-areas: "alquiler" "cumple" "escuelita";
     justify-content: space-evenly; }
-  .home__actividades--tarjeta {
-    width: 60vw; }
-  .home__actividades--img {
-    width: 30vw; }
-  .home__actividades--texto {
-    margin: 5px;
-    padding: 0 10px; }
+    .home__actividades--tarjeta {
+      width: 60vw; }
+    .home__actividades--img {
+      width: 30vw; }
+    .home__actividades--texto {
+      margin: 5px;
+      padding: 0 10px; }
   /* NOSOTROS */
   .nosotros {
     padding: 20px;
@@ -515,28 +468,45 @@ form {
   /* TORNEOS */
   .torneos {
     margin: 16px; }
-  /*     .torneos__img {
-        height: 50vh;
-    } */
-  .torneos__info--titulo {
-    font-size: 20px; }
-  .torneos__datos {
-    font-size: 15px; }
-  .torneos__boton {
-    width: 130px;
-    height: 40px;
-    font-size: 15px; }
+    .torneos__info--titulo {
+      font-size: 20px; }
+    .torneos__datos {
+      font-size: 15px; }
+    .torneos__boton {
+      width: 130px;
+      height: 40px;
+      font-size: 15px; }
   /* CONTACTO */
   .titulo__contacto {
-    font-size: 50px; }
-  .contacto__grid {
-    grid-template-columns: 50vw 50vw; }
-  .formulario__dato--recuadro {
-    width: 40vw; }
-  .formulario__dato--mensaje {
-    width: 40vw; }
-  .formulario__boton {
-    width: 100px;
-    height: 40px;
-    font-size: 11px;
-    margin: 10px; } }
+    font-size: 45px; } }
+
+* {
+  margin: 0px;
+  /* MARGEN EXTERNO */
+  padding: 0px;
+  /* MARGEN INTERNO */
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #1B264F; }
+
+ul {
+  list-style: none; }
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+  border: #21897E solid 1px;
+  border-radius: 25px;
+  color: #21897E;
+  padding: 10px;
+  margin: 10px; }
+  .botones:hover {
+    background-color: #21897E;
+    border: #ebebeb solid 1px;
+    color: white;
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s; }

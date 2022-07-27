@@ -7,9 +7,9 @@
     background-position: center;
 
     &__titulo {
-        font-family: 'Noto Sans', sans-serif;
+        font-family: $font-banners;
         color: rgba(255, 255, 255, 0.850);
-        font-size: 4rem;
+        font-size: $size-titulos*2;
         text-shadow: 5px 5px 10px black;
         margin: 5px;
     }

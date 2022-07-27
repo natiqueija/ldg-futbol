@@ -44,20 +44,22 @@
                 text-align: center;
                 margin: 15px;
             }
+            li {
+                font-size: $size-textos;
+            }
+        }
+        h2 {
+            font-size: $size-titulos;
         }
     }
     
     &__boton {
-        width: 180px;
+        width: 160px;
         height: 50px;
-        font-size: 20px;
+        font-size: $size-botones;
     }
 }
 
-h2.torneos__info--titulo {
-    font-size: 2rem;
-}
 
-li.torneos__datos {
-    font-size: 1rem;
-}
+
+

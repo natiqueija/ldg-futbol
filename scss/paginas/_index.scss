@@ -28,7 +28,7 @@
     }
 
     &--titulo {
-        color: rgb(255, 255, 255);
+        color: $color-base;
         font-size: 3rem;
         text-shadow: 5px 5px 10px black;
     }
@@ -40,7 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    background-color: #21897E;
+    background-color: $color-principal;
     align-items: center;
     margin: 20px 0;
     
@@ -58,7 +58,7 @@
     
     &--texto {
         color: white;
-        font-size: 2rem;
+        font-size: $size-titulos;
         text-align: center;
         margin: 0;
         padding: 10px;
@@ -93,12 +93,12 @@
         align-items: center;
         background-color: #21897f0a;
         margin: 16px;
-        border: #21897E solid 1px;
+        border: $color-principal solid 1px;
         width: 30vw;
     }
     
     &--titulo {
-        font-size: 2rem;
+        font-size: $size-titulos;
         margin: 10px;
     }
     
@@ -114,8 +114,8 @@
     }
     
     &--boton {
-        width: 140px;
-        height: 30px;
-        font-size: 0.8rem;
+        width: 180px;
+        height: 40px;
+        font-size: $size-botones;
     }
 }

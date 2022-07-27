@@ -10,20 +10,20 @@
     
     &__titulo {
         text-align: center;
-        font-size: 30px;
+        font-size: $size-titulos;
         margin: 20px;
     }
     
     &__texto {
         text-align: center;
-        font-size: 18px;
+        font-size: $size-textos;
         line-height: 35px;
     }
     
     &__boton {
         width: 200px;
         height: 50px;
-        font-size: 20px;
+        font-size: $size-botones;
     }
     
     &__galeria {
