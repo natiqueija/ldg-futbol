@@ -4,19 +4,19 @@
     grid-template-areas: "masculino"
                         "femenino"
                         "mixto";
-}
-
-.torneos__masculino {
-    grid-area: masculino;
-}
-
-.torneos__femenino {
-    grid-area: femenino;
-    flex-direction: row-reverse;
-}
-
-.torneos__mixto {
-    grid-area: mixto;
+    
+    .torneos__masculino {
+        grid-area: masculino;
+    }
+    
+    .torneos__femenino {
+        grid-area: femenino;
+        flex-direction: row-reverse;
+    }
+    
+    .torneos__mixto {
+        grid-area: mixto;
+    }
 }
 
 .torneos {

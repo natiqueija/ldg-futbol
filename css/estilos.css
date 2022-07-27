@@ -71,7 +71,7 @@ footer {
   .banner__titulo {
     font-family: 'Noto Sans', sans-serif;
     color: rgba(255, 255, 255, 0.85);
-    font-size: 60px;
+    font-size: 4rem;
     text-shadow: 5px 5px 10px black;
     margin: 5px; }
   .banner__home {
@@ -95,33 +95,28 @@ footer {
   background-image: url(../recursos/banner_home_3.jpg); }
 
 .home__torneos {
-  margin: 15px 0; }
-
-.home__torneos--tarjeta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; }
-
-.futbol__masculino {
-  background-image: url(../recursos/portada-futbol-masculino.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.futbol__femenino {
-  background-image: url(../recursos/portada-torneo-femenino.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.futbol__mixto {
-  background-image: url(../recursos/portada-futbol-mixto.jpg);
-  background-size: cover;
-  background-position: center; }
-
-.home__torneos--titulo {
-  color: white;
-  font-size: 3rem;
-  text-shadow: 5px 5px 10px black; }
+  margin: 30px 0; }
+  .home__torneos--tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; }
+  .home__torneos .futbol__masculino {
+    background-image: url(../recursos/portada-futbol-masculino.jpg);
+    background-size: cover;
+    background-position: center; }
+  .home__torneos .futbol__femenino {
+    background-image: url(../recursos/portada-torneo-femenino.jpg);
+    background-size: cover;
+    background-position: center; }
+  .home__torneos .futbol__mixto {
+    background-image: url(../recursos/portada-futbol-mixto.jpg);
+    background-size: cover;
+    background-position: center; }
+  .home__torneos--titulo {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 5px 5px 10px black; }
 
 .home__redes {
   width: auto;
@@ -299,16 +294,13 @@ footer {
 .torneos__grid {
   display: grid;
   grid-template-areas: "masculino" "femenino" "mixto"; }
-
-.torneos__masculino {
-  grid-area: masculino; }
-
-.torneos__femenino {
-  grid-area: femenino;
-  flex-direction: row-reverse; }
-
-.torneos__mixto {
-  grid-area: mixto; }
+  .torneos__grid .torneos__masculino {
+    grid-area: masculino; }
+  .torneos__grid .torneos__femenino {
+    grid-area: femenino;
+    flex-direction: row-reverse; }
+  .torneos__grid .torneos__mixto {
+    grid-area: mixto; }
 
 .torneos {
   display: flex;

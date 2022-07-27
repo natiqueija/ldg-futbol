@@ -9,7 +9,7 @@
     &__titulo {
         font-family: 'Noto Sans', sans-serif;
         color: rgba(255, 255, 255, 0.850);
-        font-size: 60px;
+        font-size: 4rem;
         text-shadow: 5px 5px 10px black;
         margin: 5px;
     }
@@ -33,14 +33,16 @@
     }
 }
 
-.banner__home--img1 {
-    background-image: url(../recursos/cancha_de_futbol.jpg);
-}
-
-.banner__home--img2 {
-    background-image: url(../recursos/banner_home_2.jpg);
-}
-
-.banner__home--img3 {
-    background-image: url(../recursos/banner_home_3.jpg);
+.banner__home {
+    &--img1 {
+        background-image: url(../recursos/cancha_de_futbol.jpg);
+    }
+    
+    &--img2 {
+        background-image: url(../recursos/banner_home_2.jpg);
+    }
+    
+    &--img3 {
+        background-image: url(../recursos/banner_home_3.jpg);
+    }
 }
