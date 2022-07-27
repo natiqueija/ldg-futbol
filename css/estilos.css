@@ -43,18 +43,20 @@ ul {
 footer {
   display: grid;
   grid-template-areas: "derechos redes";
-  background-color: #ebebeb;
-  padding: 0 24px; }
+  background-color: #ebebeb; }
   footer .footer__derechos {
     grid-area: derechos;
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: small; }
+    font-size: small;
+    padding: 16px;
+    margin: 0; }
   footer .footer__redes {
     grid-area: redes;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    align-items: center; }
   footer .footer__icono {
     width: 25px;
     margin: 5px; }
