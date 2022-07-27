@@ -21,11 +21,11 @@
 
 .torneos {
     display: flex;
-    justify-content: center;
-    margin: 20px 20px;
+    justify-content: space-evenly;
+    margin: 20px;
     &__img {
-        height: 70vh;
-        width: auto;
+        width: 40vw;
+        height: auto;
     }
     
     &__info {
@@ -36,14 +36,12 @@
         align-items: center;
         &--titulo {
             margin: 5px;
-            font-size: 35px;
         }
         &--lista {
             margin: 5px;
             padding: 0;
             .torneos__datos {
                 text-align: center;
-                font-size: 20px;
                 margin: 15px;
             }
         }
@@ -54,4 +52,12 @@
         height: 50px;
         font-size: 20px;
     }
+}
+
+h2.torneos__info--titulo {
+    font-size: 2rem;
+}
+
+li.torneos__datos {
+    font-size: 1rem;
 }

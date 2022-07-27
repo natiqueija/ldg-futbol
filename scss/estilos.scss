@@ -22,7 +22,7 @@ ul {
     border-radius: 25px;
     color: #21897E;
     padding: 10px;
-    margin: 2px;
+    margin: 10px;
     &:hover {
         background-color: #21897E;
         border: rgb(235, 235, 235) solid 1px;
@@ -35,7 +35,7 @@ ul {
 @import "header";
 @import "footer";
 @import "banners";
-@import "home";
+@import "index";
 @import "nosotros";
 @import "actividades";
 @import "torneos";

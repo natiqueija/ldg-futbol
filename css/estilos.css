@@ -21,7 +21,7 @@ ul {
   border-radius: 25px;
   color: #21897E;
   padding: 10px;
-  margin: 2px; }
+  margin: 10px; }
   .botones:hover {
     background-color: #21897E;
     border: #ebebeb solid 1px;
@@ -70,7 +70,8 @@ footer {
     font-family: 'Noto Sans', sans-serif;
     color: rgba(255, 255, 255, 0.85);
     font-size: 60px;
-    text-shadow: 5px 5px 10px black; }
+    text-shadow: 5px 5px 10px black;
+    margin: 5px; }
   .banner__home {
     height: 80vh; }
   .banner__nosotros {
@@ -92,12 +93,13 @@ footer {
   background-image: url(../recursos/banner_home_3.jpg); }
 
 .home__torneos {
-  justify-content: space-evenly; }
-  .home__torneos--tarjeta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; }
+  margin: 15px 0; }
+
+.home__torneos--tarjeta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; }
 
 .futbol__masculino {
   background-image: url(../recursos/portada-futbol-masculino.jpg);
@@ -114,9 +116,9 @@ footer {
   background-size: cover;
   background-position: center; }
 
-.home__carrousel--titulo {
+.home__torneos--titulo {
   color: white;
-  font-size: 60px;
+  font-size: 3rem;
   text-shadow: 5px 5px 10px black; }
 
 .home__redes {
@@ -130,8 +132,7 @@ footer {
   margin: 20px 0; }
   .home__redes--titulo {
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin: 30px; }
+    grid-row: 1 / 2; }
   .home__redes--logos {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -139,8 +140,10 @@ footer {
     justify-content: space-evenly; }
   .home__redes--texto {
     color: white;
-    font-size: 30px;
-    text-align: center; }
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px; }
   .home__redes--img {
     width: 100px;
     margin: 0 10px; }
@@ -164,18 +167,19 @@ footer {
     border: #21897E solid 1px;
     width: 30vw; }
   .home__actividades--titulo {
-    font-size: 30px;
+    font-size: 2rem;
     margin: 10px; }
   .home__actividades--img {
     width: 20vw; }
   .home__actividades--texto {
     text-align: center;
-    margin: 15px;
+    margin: 10px;
+    padding: 0 2rem;
     line-height: 25px; }
   .home__actividades--boton {
     width: 140px;
     height: 30px;
-    font-size: 12px; }
+    font-size: 0.8rem; }
 
 .nosotros {
   display: flex;
@@ -192,9 +196,9 @@ footer {
     margin: 10px; }
 
 .galeria {
-  width: 50vw; }
+  width: 70vw; }
   .galeria__img {
-    height: 90vh; }
+    height: 50vh; }
 
 .ubicacion {
   display: grid;
@@ -306,11 +310,11 @@ footer {
 
 .torneos {
   display: flex;
-  justify-content: center;
-  margin: 20px 20px; }
+  justify-content: space-evenly;
+  margin: 20px; }
   .torneos__img {
-    height: 70vh;
-    width: auto; }
+    width: 40vw;
+    height: auto; }
   .torneos__info {
     display: flex;
     flex-wrap: wrap;
@@ -318,19 +322,23 @@ footer {
     justify-content: center;
     align-items: center; }
     .torneos__info--titulo {
-      margin: 5px;
-      font-size: 35px; }
+      margin: 5px; }
     .torneos__info--lista {
       margin: 5px;
       padding: 0; }
       .torneos__info--lista .torneos__datos {
         text-align: center;
-        font-size: 20px;
         margin: 15px; }
   .torneos__boton {
     width: 180px;
     height: 50px;
     font-size: 20px; }
+
+h2.torneos__info--titulo {
+  font-size: 2rem; }
+
+li.torneos__datos {
+  font-size: 1rem; }
 
 .banner__contacto {
   display: flex;
@@ -348,23 +356,20 @@ form {
 @media (min-width: 320px) and (max-width: 575px) {
   /* BANNERS */
   .banner__titulo {
-    font-size: 40px; }
+    font-size: 2rem; }
   /* HOME */
-  .home__torneos {
-    width: 90vw; }
-    .home__torneos--img {
-      height: 50vh; }
-  .home__carrousel--titulo {
-    font-size: 10px; }
+  .home__torneos--tarjeta {
+    height: 30vh; }
+  .futbol__femenino {
+    background-position: 80% 20%; }
   .home__redes {
-    height: 40vh;
+    height: 50vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* margin: 30px 0; */ }
+    grid-template-rows: 1fr 1fr; }
   .home__redes--titulo {
     grid-column: 1 / 1;
     grid-row: 1 / 2;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 16px 20px; }
   .home__redes--logos {
     grid-column: 1 / 1;
@@ -387,7 +392,7 @@ form {
     padding: 0px;
     margin: 20px;
     line-height: 20px;
-    font-size: 15px; }
+    font-size: 1rem; }
   .nosotros__texto {
     margin: 5px; }
   .galeria__img {
@@ -439,12 +444,8 @@ form {
     margin: 16px auto;
     align-items: center; }
   .torneos__img {
-    height: auto;
-    width: 70vw; }
-  .torneos__info--titulo {
-    font-size: 25px; }
-  .torneos__datos {
-    font-size: 10px; }
+    width: 70vw;
+    height: auto; }
   .torneos__boton {
     width: 130px;
     height: 40px;
@@ -520,8 +521,9 @@ form {
   /* TORNEOS */
   .torneos {
     margin: 16px; }
-  .torneos__img {
-    height: 50vh; }
+  /*     .torneos__img {
+        height: 50vh;
+    } */
   .torneos__info--titulo {
     font-size: 20px; }
   .torneos__datos {

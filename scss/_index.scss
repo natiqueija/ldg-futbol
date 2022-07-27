@@ -1,13 +1,13 @@
 
 .home__torneos {
-    justify-content: space-evenly;
-    
-    &--tarjeta {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80vh;
-    }
+    margin: 15px 0;
+}
+
+.home__torneos--tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
 
 .futbol__masculino {
@@ -28,9 +28,9 @@
     background-position: center;
 }
 
-.home__carrousel--titulo {
+.home__torneos--titulo {
     color: rgb(255, 255, 255);
-    font-size: 60px;
+    font-size: 3rem;
     text-shadow: 5px 5px 10px black;
 }
 
@@ -47,7 +47,6 @@
     &--titulo {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
-        margin: 30px;
     }
     
     &--logos {
@@ -59,8 +58,10 @@
     
     &--texto {
         color: white;
-        font-size: 30px;
+        font-size: 2rem;
         text-align: center;
+        margin: 0;
+        padding: 10px;
     }
     
     &--img {
@@ -97,7 +98,7 @@
     }
     
     &--titulo {
-        font-size: 30px;
+        font-size: 2rem;
         margin: 10px;
     }
     
@@ -107,13 +108,14 @@
     
     &--texto {
         text-align: center;
-        margin: 15px;
+        margin: 10px;
+        padding: 0 2rem;
         line-height: 25px;
     }
     
     &--boton {
         width: 140px;
         height: 30px;
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 }
