@@ -181,10 +181,6 @@
 /* MEDIA QUERIE DE TABLET */
 
 @media (min-width: 576px) and (max-width: 992px) {
-    .home__torneos {
-        width: 90vw;
-    }
-
     .home__redes {
         height: 40vh;
         grid-template-columns: 1fr;

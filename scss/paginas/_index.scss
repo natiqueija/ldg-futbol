@@ -4,27 +4,23 @@
     
     &--tarjeta {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
         height: 80vh;
     }
 
     .futbol__masculino {
         background-image: url(../recursos/portada-futbol-masculino.jpg);
-        background-size: cover;
-        background-position: center;
+        @extend .background-centrado;
     }
     
     .futbol__femenino {
         background-image: url(../recursos/portada-torneo-femenino.jpg);
-        background-size: cover;
-        background-position: center;
+        @extend .background-centrado;
     }
     
     .futbol__mixto {
         background-image: url(../recursos/portada-futbol-mixto.jpg);
-        background-size: cover;
-        background-position: center;
+        @extend .background-centrado;
     }
 
     &--titulo {
@@ -89,8 +85,7 @@
 
     &--tarjeta {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, center, center);
         background-color: #21897f0a;
         margin: 16px;
         border: $color-principal solid 1px;

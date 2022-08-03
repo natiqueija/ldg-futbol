@@ -31,9 +31,7 @@
     &__info {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
         &--titulo {
             margin: 5px;
         }

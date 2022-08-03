@@ -1,9 +1,7 @@
 
 .nosotros {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
     height: 45vh;
     text-align: center;
     padding: 0 100px;
@@ -48,9 +46,7 @@
     &__texto {
         grid-area: texto;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (column, center, center);
         text-align: center;
         font-size: $size-textos;
         margin: 30px;

@@ -19,8 +19,7 @@ footer {
         &__redes {
             grid-area: redes;
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            @include flex(row, flex-end, center);
         }
         
         &__icono {

@@ -3,9 +3,7 @@
     margin: 5vh;
     &__seccion {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
     }
     
     &__titulo {
@@ -49,59 +47,50 @@
         .alquiler {
             &__uno {
                 background-image: url(../recursos/alquiler-canchas.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
             &__dos {
                 background-image: url(../recursos/alquiler-canchas.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
             &__tres {
                 background-image: url(../recursos/alquiler-canchas.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
         }
         .escuelita {
             &__uno {
                 background-image: url(../recursos/escuelita.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
             &__dos {
                 background-image: url(../recursos/escuelita.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
             &__tres {
                 background-image: url(../recursos/escuelita.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
         }
         .cumple {
             &__uno {
                 background-image: url(../recursos/cumpleanos.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
             &__dos {
                 background-image: url(../recursos/cumpleanos.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
             
             &__tres {
                 background-image: url(../recursos/cumpleanos.jpg);
-                background-position: center;
-                background-size: cover;
+                @extend .background-centrado;
             }
         }
     }
