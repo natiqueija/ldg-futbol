@@ -3,7 +3,7 @@
 /* LETRAS */
 /* TAMAÑO LETRAS */
 /* EXTEND */
-.background-centrado, .home__torneos .futbol__masculino, .home__torneos .futbol__femenino, .home__torneos .futbol__mixto, .actividades__galeria .alquiler__uno, .actividades__galeria .alquiler__dos, .actividades__galeria .alquiler__tres, .actividades__galeria .escuelita__uno, .actividades__galeria .escuelita__dos, .actividades__galeria .escuelita__tres, .actividades__galeria .cumple__uno, .actividades__galeria .cumple__dos, .actividades__galeria .cumple__tres, .banner__contacto {
+.background-centrado, .home__torneos .futbol__masculino, .home__torneos .futbol__femenino, .home__torneos .futbol__mixto, .home__actividades .home__alquiler--img, .home__actividades .home__cumple--img, .home__actividades .home__escuelita--img, .actividades__galeria .alquiler__uno, .actividades__galeria .alquiler__dos, .actividades__galeria .alquiler__tres, .actividades__galeria .escuelita__uno, .actividades__galeria .escuelita__dos, .actividades__galeria .escuelita__tres, .actividades__galeria .cumple__uno, .actividades__galeria .cumple__dos, .actividades__galeria .cumple__tres, .banner__contacto {
   background-size: cover;
   background-position: center; }
 
@@ -127,10 +127,16 @@ footer {
   justify-content: space-evenly; }
   .home__actividades .home__alquiler {
     grid-area: alquiler; }
+    .home__actividades .home__alquiler--img {
+      background-image: url(../recursos/alquiler-canchas.jpg); }
   .home__actividades .home__cumple {
     grid-area: cumple; }
+    .home__actividades .home__cumple--img {
+      background-image: url(../recursos/cumpleanos.jpg); }
   .home__actividades .home__escuelita {
     grid-area: escuelita; }
+    .home__actividades .home__escuelita--img {
+      background-image: url(../recursos/escuelita.jpg); }
   .home__actividades--tarjeta {
     display: flex;
     flex-direction: column;
@@ -144,7 +150,8 @@ footer {
     font-size: 2rem;
     margin: 10px; }
   .home__actividades--img {
-    width: 20vw; }
+    width: 20vw;
+    height: 20vw; }
   .home__actividades--texto {
     text-align: center;
     margin: 10px;
@@ -333,7 +340,8 @@ form {
     .home__actividades--tarjeta {
       width: 90vw; }
     .home__actividades--img {
-      width: 60vw; }
+      width: 60vw;
+      height: 40vh; }
     .home__actividades--texto {
       margin: 5px;
       padding: 0 10px; }
@@ -424,7 +432,8 @@ form {
     .home__actividades--tarjeta {
       width: 60vw; }
     .home__actividades--img {
-      width: 30vw; }
+      width: 30vw;
+      height: 40vh; }
     .home__actividades--texto {
       margin: 5px;
       padding: 0 10px; }
