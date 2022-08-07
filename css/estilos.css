@@ -239,23 +239,23 @@ footer {
     .actividades__galeria .foto__tres {
       grid-area: foto3; }
     .actividades__galeria .alquiler__uno {
-      background-image: url(../recursos/alquiler-canchas.jpg); }
+      background-image: url(../recursos/alquiler__uno.jpg); }
     .actividades__galeria .alquiler__dos {
-      background-image: url(../recursos/alquiler-canchas.jpg); }
+      background-image: url(../recursos/alquiler__dos.jpg); }
     .actividades__galeria .alquiler__tres {
-      background-image: url(../recursos/alquiler-canchas.jpg); }
+      background-image: url(../recursos/alquiler__tres.jpg); }
     .actividades__galeria .escuelita__uno {
-      background-image: url(../recursos/escuelita.jpg); }
+      background-image: url(../recursos/escuelita__uno.jpg); }
     .actividades__galeria .escuelita__dos {
-      background-image: url(../recursos/escuelita.jpg); }
+      background-image: url(../recursos/escuelita__dos.jpg); }
     .actividades__galeria .escuelita__tres {
-      background-image: url(../recursos/escuelita.jpg); }
+      background-image: url(../recursos/escuelita__tres.jpg); }
     .actividades__galeria .cumple__uno {
-      background-image: url(../recursos/cumpleanos.jpg); }
+      background-image: url(../recursos/cumpleanos__uno.jpg); }
     .actividades__galeria .cumple__dos {
-      background-image: url(../recursos/cumpleanos.jpg); }
+      background-image: url(../recursos/cumpleanos__dos.jpg); }
     .actividades__galeria .cumple__tres {
-      background-image: url(../recursos/cumpleanos.jpg); }
+      background-image: url(../recursos/cumpleanos__tres.jpg); }
 
 .torneos__grid {
   display: grid;

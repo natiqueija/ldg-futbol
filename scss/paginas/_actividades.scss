@@ -46,50 +46,50 @@
         }
         .alquiler {
             &__uno {
-                background-image: url(../recursos/alquiler-canchas.jpg);
+                background-image: url(../recursos/alquiler__uno.jpg);
                 @extend .background-centrado;
             }
             
             &__dos {
-                background-image: url(../recursos/alquiler-canchas.jpg);
+                background-image: url(../recursos/alquiler__dos.jpg);
                 @extend .background-centrado;
             }
             
             &__tres {
-                background-image: url(../recursos/alquiler-canchas.jpg);
+                background-image: url(../recursos/alquiler__tres.jpg);
                 @extend .background-centrado;
             }
         }
         .escuelita {
             &__uno {
-                background-image: url(../recursos/escuelita.jpg);
+                background-image: url(../recursos/escuelita__uno.jpg);
                 @extend .background-centrado;
             }
             
             &__dos {
-                background-image: url(../recursos/escuelita.jpg);
+                background-image: url(../recursos/escuelita__dos.jpg);
                 @extend .background-centrado;
             }
             
             &__tres {
-                background-image: url(../recursos/escuelita.jpg);
+                background-image: url(../recursos/escuelita__tres.jpg);
                 @extend .background-centrado;
             }
             
         }
         .cumple {
             &__uno {
-                background-image: url(../recursos/cumpleanos.jpg);
+                background-image: url(../recursos/cumpleanos__uno.jpg);
                 @extend .background-centrado;
             }
             
             &__dos {
-                background-image: url(../recursos/cumpleanos.jpg);
+                background-image: url(../recursos/cumpleanos__dos.jpg);
                 @extend .background-centrado;
             }
             
             &__tres {
-                background-image: url(../recursos/cumpleanos.jpg);
+                background-image: url(../recursos/cumpleanos__tres.jpg);
                 @extend .background-centrado;
             }
         }
