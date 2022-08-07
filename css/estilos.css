@@ -128,15 +128,15 @@ footer {
   .home__actividades .home__alquiler {
     grid-area: alquiler; }
     .home__actividades .home__alquiler--img {
-      background-image: url(../recursos/alquiler-canchas.jpg); }
+      background-image: url(../recursos/alquiler__dos.jpg); }
   .home__actividades .home__cumple {
     grid-area: cumple; }
     .home__actividades .home__cumple--img {
-      background-image: url(../recursos/cumpleanos.jpg); }
+      background-image: url(../recursos/cumpleanos__dos.jpg); }
   .home__actividades .home__escuelita {
     grid-area: escuelita; }
     .home__actividades .home__escuelita--img {
-      background-image: url(../recursos/escuelita.jpg); }
+      background-image: url(../recursos/escuelita__dos.jpg); }
   .home__actividades--tarjeta {
     display: flex;
     flex-direction: column;
@@ -318,6 +318,8 @@ form {
   /* HOME */
   .home__torneos--tarjeta {
     height: 30vh; }
+  .home__torneos--titulo {
+    font-size: 2rem; }
   .home__torneos .futbol__femenino {
     background-position: 80% 20%; }
   .home__redes {

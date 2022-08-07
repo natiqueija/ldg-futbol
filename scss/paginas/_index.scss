@@ -74,7 +74,7 @@
     .home__alquiler {
         grid-area: alquiler;
         &--img {
-            background-image: url(../recursos/alquiler-canchas.jpg);
+            background-image: url(../recursos/alquiler__dos.jpg);
             @extend .background-centrado;
         }
     }
@@ -82,7 +82,7 @@
     .home__cumple {
         grid-area: cumple;
         &--img {
-            background-image: url(../recursos/cumpleanos.jpg);
+            background-image: url(../recursos/cumpleanos__dos.jpg);
             @extend .background-centrado;
         }
     }
@@ -90,7 +90,7 @@
     .home__escuelita {
         grid-area: escuelita;
         &--img {
-            background-image: url(../recursos/escuelita.jpg);
+            background-image: url(../recursos/escuelita__dos.jpg);
             @extend .background-centrado;
         }
     }
