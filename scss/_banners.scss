@@ -32,6 +32,14 @@
     }
 }
 
+.banner__contacto {
+    display: flex;
+    @include flex(row, center, flex-start);
+    height: 80vh;
+    background-image: url("../recursos/contactos_banner.jpg");
+    @extend .background-centrado;
+}
+
 .banner__home {
     &--img1 {
         background-image: url(../recursos/cancha_de_futbol.jpg);

@@ -1,6 +1,6 @@
 
 .actividades {
-    margin: 5vh;
+    margin: 15px;
     &__seccion {
         display: flex;
         @include flex(column, center, center);

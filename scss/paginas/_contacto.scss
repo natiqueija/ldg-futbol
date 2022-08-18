@@ -1,12 +1,4 @@
 
-.banner__contacto {
-    display: flex;
-    @include flex(row, center, flex-start);
-    height: 90vh;
-    background-image: url("../recursos/contactos_banner.jpg");
-    @extend .background-centrado;
-}
-
 form {
     margin: 20px;
     border-radius: 20px;

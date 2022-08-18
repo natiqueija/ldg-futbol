@@ -3,7 +3,7 @@
 /* BANNERS */
 
     .banner__titulo {
-        font-size: 2rem;
+        font-size: $size-titulos;
     }
 
 /* HOME */
@@ -14,7 +14,7 @@
         }
 
         &--titulo {
-            font-size: 2rem;
+            font-size: $size-titulos;
         }
     
         .futbol__femenino {
@@ -23,14 +23,12 @@
     }
 
     .home__redes {
-        height: 50vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
         &--titulo {
             grid-column: 1 / 1;
             grid-row: 1 / 2;
-            font-size: 1rem;
             margin: 16px 20px;
         }
         
@@ -68,11 +66,9 @@
 /* NOSOTROS */
 
     .nosotros {
-        height: 50vh;
         padding: 0px;
         margin: 20px;
         line-height: 20px;
-        font-size: 1rem;
 
         &__texto {
             margin: 5px;
@@ -181,13 +177,26 @@
             font-size: 15px;
         }
     }
+
+/* CONTACTO */
+
+    .banner__contacto {
+        height: 30vh;
+    }
 }
 
 /* MEDIA QUERIE DE TABLET */
 
 @media (min-width: 576px) and (max-width: 992px) {
-    .home__redes {
+    .banner__home {
         height: 40vh;
+    }
+
+    .home__torneos--tarjeta {
+        height: 40vh;
+    }
+    
+    .home__redes {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
@@ -206,6 +215,10 @@
         &--img {
             width: 80px;
         }
+
+        &--texto {
+            font-size: $size-titulos*1.5;
+        }
     }
 
     .home__actividades {
@@ -218,13 +231,13 @@
         }
     
         &--img {
-            width: 30vw;
+            margin: 10px;
+            width: 50vw;
             height: 40vh;
         }
     
         &--texto {
             margin: 5px;
-            padding: 0 10px;
         }
     }
 
@@ -233,24 +246,30 @@
     .nosotros {
         padding: 20px;
         line-height: 25px;
-        font-size: 15px;
     }
 
-    .ubicacion__texto {
-        font-size: 15px;
-        margin: 20px;
+    .galeria {
+        &__img {
+            height: 40vh;
+        }
     }
+    .ubicacion {
+        &__texto {
+        font-size: $size-textos*1.5;
+        margin: 10px;
+        } 
+
+        &__mapa {
+            height: 40vh;
+        }
+    }
+
 
 /* ACTIVIDADES */
 
     .actividades {
         &__titulo {
-            font-size: 25px;
             margin: 15px;
-        }
-        
-        &__texto {
-            font-size: 14px;
         }
         
         &__boton {
@@ -260,7 +279,7 @@
         }
     
         &__galeria {
-            height: 35vh;
+            height: 20vh;
             margin: 16px;
         }
     }
@@ -269,22 +288,18 @@
 
     .torneos {
         margin: 16px;
-        &__info--titulo {
-            font-size: 20px;
-        }
-        
-        &__datos {
-            font-size: 15px;
-        }
         
         &__boton {
             width: 130px;
             height: 40px;
-            font-size: 15px;
         }
     }
 
 /* CONTACTO */
+
+    .banner__contacto {
+        height: 40vh;
+    }
 
     .titulo__contacto {
         font-size: 45px;

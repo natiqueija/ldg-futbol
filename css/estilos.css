@@ -3,7 +3,7 @@
 /* LETRAS */
 /* TAMAÑO LETRAS */
 /* EXTEND */
-.background-centrado, .home__torneos .futbol__masculino, .home__torneos .futbol__femenino, .home__torneos .futbol__mixto, .home__actividades .home__alquiler--img, .home__actividades .home__cumple--img, .home__actividades .home__escuelita--img, .actividades__galeria .alquiler__uno, .actividades__galeria .alquiler__dos, .actividades__galeria .alquiler__tres, .actividades__galeria .escuelita__uno, .actividades__galeria .escuelita__dos, .actividades__galeria .escuelita__tres, .actividades__galeria .cumple__uno, .actividades__galeria .cumple__dos, .actividades__galeria .cumple__tres, .banner__contacto {
+.background-centrado, .banner__contacto, .home__torneos .futbol__masculino, .home__torneos .futbol__femenino, .home__torneos .futbol__mixto, .home__actividades .home__alquiler--img, .home__actividades .home__cumple--img, .home__actividades .home__escuelita--img, .actividades__galeria .alquiler__uno, .actividades__galeria .alquiler__dos, .actividades__galeria .alquiler__tres, .actividades__galeria .escuelita__uno, .actividades__galeria .escuelita__dos, .actividades__galeria .escuelita__tres, .actividades__galeria .cumple__uno, .actividades__galeria .cumple__dos, .actividades__galeria .cumple__tres {
   background-size: cover;
   background-position: center; }
 
@@ -66,6 +66,14 @@ footer {
   .banner__torneos {
     background-image: url(../recursos/torneos_banner.jpg); }
 
+.banner__contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  background-image: url("../recursos/contactos_banner.jpg"); }
+
 .banner__home--img1 {
   background-image: url(../recursos/cancha_de_futbol.jpg); }
 
@@ -95,8 +103,8 @@ footer {
     text-shadow: 5px 5px 10px black; }
 
 .home__redes {
-  width: auto;
-  height: 30vh;
+  width: 100vw;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
@@ -167,7 +175,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 45vh;
   text-align: center;
   padding: 0 100px;
   margin: 30px;
@@ -208,7 +215,7 @@ footer {
       margin: 5px; }
 
 .actividades {
-  margin: 5vh; }
+  margin: 15px; }
   .actividades__seccion {
     display: flex;
     flex-direction: column;
@@ -298,14 +305,6 @@ footer {
     height: 50px;
     font-size: 1.2rem; }
 
-.banner__contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  height: 90vh;
-  background-image: url("../recursos/contactos_banner.jpg"); }
-
 form {
   margin: 20px;
   border-radius: 20px; }
@@ -323,13 +322,11 @@ form {
   .home__torneos .futbol__femenino {
     background-position: 80% 20%; }
   .home__redes {
-    height: 50vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; }
     .home__redes--titulo {
       grid-column: 1 / 1;
       grid-row: 1 / 2;
-      font-size: 1rem;
       margin: 16px 20px; }
     .home__redes--logos {
       grid-column: 1 / 1;
@@ -349,11 +346,9 @@ form {
       padding: 0 10px; }
   /* NOSOTROS */
   .nosotros {
-    height: 50vh;
     padding: 0px;
     margin: 20px;
-    line-height: 20px;
-    font-size: 1rem; }
+    line-height: 20px; }
     .nosotros__texto {
       margin: 5px; }
   .galeria__img {
@@ -410,12 +405,18 @@ form {
     .torneos__boton {
       width: 130px;
       height: 40px;
-      font-size: 15px; } }
+      font-size: 15px; }
+  /* CONTACTO */
+  .banner__contacto {
+    height: 30vh; } }
 
 /* MEDIA QUERIE DE TABLET */
 @media (min-width: 576px) and (max-width: 992px) {
+  .banner__home {
+    height: 40vh; }
+  .home__torneos--tarjeta {
+    height: 40vh; }
   .home__redes {
-    height: 40vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr; }
     .home__redes--titulo {
@@ -428,50 +429,49 @@ form {
       grid-row: 2 / 3; }
     .home__redes--img {
       width: 80px; }
+    .home__redes--texto {
+      font-size: 3rem; }
   .home__actividades {
     grid-template-areas: "alquiler" "cumple" "escuelita";
     justify-content: space-evenly; }
     .home__actividades--tarjeta {
       width: 60vw; }
     .home__actividades--img {
-      width: 30vw;
+      margin: 10px;
+      width: 50vw;
       height: 40vh; }
     .home__actividades--texto {
-      margin: 5px;
-      padding: 0 10px; }
+      margin: 5px; }
   /* NOSOTROS */
   .nosotros {
     padding: 20px;
-    line-height: 25px;
-    font-size: 15px; }
+    line-height: 25px; }
+  .galeria__img {
+    height: 40vh; }
   .ubicacion__texto {
-    font-size: 15px;
-    margin: 20px; }
+    font-size: 1.5rem;
+    margin: 10px; }
+  .ubicacion__mapa {
+    height: 40vh; }
   /* ACTIVIDADES */
   .actividades__titulo {
-    font-size: 25px;
     margin: 15px; }
-  .actividades__texto {
-    font-size: 14px; }
   .actividades__boton {
     width: 150px;
     height: 40px;
     font-size: 15px; }
   .actividades__galeria {
-    height: 35vh;
+    height: 20vh;
     margin: 16px; }
   /* TORNEOS */
   .torneos {
     margin: 16px; }
-    .torneos__info--titulo {
-      font-size: 20px; }
-    .torneos__datos {
-      font-size: 15px; }
     .torneos__boton {
       width: 130px;
-      height: 40px;
-      font-size: 15px; }
+      height: 40px; }
   /* CONTACTO */
+  .banner__contacto {
+    height: 40vh; }
   .titulo__contacto {
     font-size: 45px; } }
 

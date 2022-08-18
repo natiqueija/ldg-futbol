@@ -2,7 +2,6 @@
 .nosotros {
     display: flex;
     @include flex(column, center, center);
-    height: 45vh;
     text-align: center;
     padding: 0 100px;
     margin: 30px;
