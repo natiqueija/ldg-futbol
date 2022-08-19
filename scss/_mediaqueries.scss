@@ -2,8 +2,13 @@
 @media (min-width: 320px) and (max-width: 575px) {
 /* BANNERS */
 
-    .banner__titulo {
+    .banner {
+        &__home {
+            height: 60vh;
+        }
+        &__titulo {
         font-size: $size-titulos;
+        }
     }
 
 /* HOME */
@@ -68,7 +73,7 @@
     .nosotros {
         padding: 0px;
         margin: 20px;
-        line-height: 20px;
+        line-height: 25px;
 
         &__texto {
             margin: 5px;
@@ -77,17 +82,18 @@
     
     .galeria {
         &__img {
-            height: 50vh;
+            height: 40vh;
         }
     }
 
     .ubicacion {
+        margin: 0;
         grid-template-areas: "titulo"
                             "texto"
                             "mapa";
         &__texto {
             font-size: 15px;
-            margin: 10px;
+            margin: 0 15px;
         }
 
         &__mapa {
@@ -233,7 +239,7 @@
         &--img {
             margin: 10px;
             width: 50vw;
-            height: 40vh;
+            height: 30vh;
         }
     
         &--texto {

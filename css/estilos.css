@@ -312,6 +312,8 @@ form {
 /* MEDIA QUERIE DE CELULAR */
 @media (min-width: 320px) and (max-width: 575px) {
   /* BANNERS */
+  .banner__home {
+    height: 60vh; }
   .banner__titulo {
     font-size: 2rem; }
   /* HOME */
@@ -348,16 +350,17 @@ form {
   .nosotros {
     padding: 0px;
     margin: 20px;
-    line-height: 20px; }
+    line-height: 25px; }
     .nosotros__texto {
       margin: 5px; }
   .galeria__img {
-    height: 50vh; }
+    height: 40vh; }
   .ubicacion {
+    margin: 0;
     grid-template-areas: "titulo" "texto" "mapa"; }
     .ubicacion__texto {
       font-size: 15px;
-      margin: 10px; }
+      margin: 0 15px; }
     .ubicacion__mapa {
       width: 80vw; }
   /* ACTIVIDADES */
@@ -439,7 +442,7 @@ form {
     .home__actividades--img {
       margin: 10px;
       width: 50vw;
-      height: 40vh; }
+      height: 30vh; }
     .home__actividades--texto {
       margin: 5px; }
   /* NOSOTROS */
